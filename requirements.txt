@@ -1,0 +1,33 @@
+python-dotenv
+langchain
+langchain-community
+langchain-classic
+langchain-google-genai
+langchain-groq
+langchain-text-splitters
+sentence-transformers
+chromadb
+pypdf
+pandas
+beautifulsoup4
+unstructured
+python-docx
+rank-bm25
+faiss-cpu
+networkx
+
+
+
+#Libraries	Purpose
+#LangChain	RAG framework
+#Google GenAI / Groq	Gemini and Groq integration
+#Sentence Transformers	Embeddings
+#ChromaDB / FAISS	Vector databases
+#PyPDF	PDF loading
+#Pandas	CSV processing
+#BeautifulSoup4	HTML processing
+#Rank-BM25	Hybrid RAG
+#NetworkX	Graph RAG
+#Python-dotenv	Secure API key management
+#sentence_transformers – Embeddings.
+#faiss – Vector similarity search.

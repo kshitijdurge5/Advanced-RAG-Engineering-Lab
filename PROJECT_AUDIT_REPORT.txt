@@ -1,0 +1,1727 @@
+﻿============================================================
+ADVANCED RAG ENGINEERING LAB - PROJECT AUDIT
+============================================================
+Project location: C:\AI Projects\Gemini_RAG_Project\Advanced_RAG_Engineering_Lab
+Audit date: 11/24/2026 17:27:01
+
+TOTAL FILES: 203
+TOTAL FOLDERS: 20
+PYTHON FILES: 176
+NOTEBOOK FILES: 0
+
+================ PROJECT FOLDERS ================
+\.venv
+\01_Data_Ingestion
+\02_RAG_Fundamentals
+\03_Advanced_RAG
+\04_RAG_Production
+\chroma_db
+\documents
+\phase_2_advanced_rag_optimization
+\phase_3_ai_agents_agentic_rag
+\phase_4_evaluation_production
+\phase_5_capstone_interview
+\phase_2_advanced_rag_optimization\llm
+\phase_2_advanced_rag_optimization\rag
+\phase_3_ai_agents_agentic_rag\ai_agents
+\phase_4_evaluation_production\ai_security
+\phase_4_evaluation_production\ai_system_design
+\phase_4_evaluation_production\backend
+\phase_4_evaluation_production\deployment
+\phase_4_evaluation_production\evals
+\phase_5_capstone_interview\capstone_agentic_rag
+
+================ ALL PROJECT FILES ================
+\.env | 141 bytes
+\.gitignore | 225 bytes
+\config.py | 1644 bytes
+\create_docx.py | 1128 bytes
+\create_sample_documents.py | 2664 bytes
+\download_real_html.py | 1680 bytes
+\phase_2_Advanced_RAG_Engineering_lab.py | 62680 bytes
+\phase_2_agent_memory.json | 50 bytes
+\requirements.txt | 667 bytes
+\test_gemini.py | 605 bytes
+\tiktoken) | 0 bytes
+\01_Data_Ingestion\01_multiple_document_loaders.py | 6557 bytes
+\01_Data_Ingestion\02_theory_and_interview_notes.md | 4139 bytes
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | 14720 bytes
+\02_RAG_Fundamentals\02_theory_and_interview_notes.md | 6891 bytes
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | 9544 bytes
+\03_Advanced_RAG\02_theory_and_interview_notes.md | 8478 bytes
+\03_Advanced_RAG\15_hybrid_search_reranking.py | 11837 bytes
+\04_RAG_Production\01_production_rag_app.py | 19734 bytes
+\04_RAG_Production\01_production_rag_app_backup.py | 11943 bytes
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | 13747 bytes
+\04_RAG_Production\02_theory_and_interview_notes.md | 9034 bytes
+\04_RAG_Production\test_gemini.py | 797 bytes
+\documents\company_information.txt | 850 bytes
+\documents\company_report.docx | 36794 bytes
+\documents\employee_data.csv | 148 bytes
+\documents\nasa_climate_evidence.html | 320209 bytes
+\documents\TechVision_AI_RAG_Learning_Dataset.pdf | 42367 bytes
+\phase_2_advanced_rag_optimization\README.md | 265 bytes
+\phase_2_advanced_rag_optimization\llm\01_tokenization.py | 1157 bytes
+\phase_2_advanced_rag_optimization\llm\02_transformer_architecture.py | 1136 bytes
+\phase_2_advanced_rag_optimization\llm\03_self_attention.py | 1106 bytes
+\phase_2_advanced_rag_optimization\llm\04_context_windows.py | 1109 bytes
+\phase_2_advanced_rag_optimization\llm\05_kv_cache.py | 1088 bytes
+\phase_2_advanced_rag_optimization\llm\06_temperature_and_top_p.py | 1127 bytes
+\phase_2_advanced_rag_optimization\llm\07_system_prompts.py | 1106 bytes
+\phase_2_advanced_rag_optimization\llm\08_few_shot_prompting.py | 1118 bytes
+\phase_2_advanced_rag_optimization\llm\09_chain_of_thought.py | 1112 bytes
+\phase_2_advanced_rag_optimization\llm\10_reasoning_models.py | 1112 bytes
+\phase_2_advanced_rag_optimization\llm\11_structured_outputs.py | 1118 bytes
+\phase_2_advanced_rag_optimization\llm\12_prompt_caching.py | 1106 bytes
+\phase_2_advanced_rag_optimization\llm\13_token_pricing.py | 1103 bytes
+\phase_2_advanced_rag_optimization\llm\14_hallucinations.py | 1102 bytes
+\phase_2_advanced_rag_optimization\llm\15_multimodal_inputs.py | 1115 bytes
+\phase_2_advanced_rag_optimization\llm\16_fine_tuning_with_lora.py | 1127 bytes
+\phase_2_advanced_rag_optimization\llm\17_qlora.py | 1079 bytes
+\phase_2_advanced_rag_optimization\llm\18_quantization.py | 1100 bytes
+\phase_2_advanced_rag_optimization\llm\19_distillation.py | 1100 bytes
+\phase_2_advanced_rag_optimization\llm\20_open_vs_closed_models.py | 1127 bytes
+\phase_2_advanced_rag_optimization\llm\README.md | 1549 bytes
+\phase_2_advanced_rag_optimization\rag\01_embeddings.py | 1092 bytes
+\phase_2_advanced_rag_optimization\rag\02_cosine_similarity.py | 1305 bytes
+\phase_2_advanced_rag_optimization\rag\03_chunking_strategies.py | 1331 bytes
+\phase_2_advanced_rag_optimization\rag\04_vector_databases.py | 1110 bytes
+\phase_2_advanced_rag_optimization\rag\05_pgvector.py | 1088 bytes
+\phase_2_advanced_rag_optimization\rag\06_hnsw_indexes.py | 1100 bytes
+\phase_2_advanced_rag_optimization\rag\07_metadata_filtering.py | 1783 bytes
+\phase_2_advanced_rag_optimization\rag\08_bm25_keyword_search.py | 1785 bytes
+\phase_2_advanced_rag_optimization\rag\09_hybrid_search.py | 1761 bytes
+\phase_2_advanced_rag_optimization\rag\10_reranking.py | 1745 bytes
+\phase_2_advanced_rag_optimization\rag\11_query_rewriting.py | 1767 bytes
+\phase_2_advanced_rag_optimization\rag\12_hyde.py | 1727 bytes
+\phase_2_advanced_rag_optimization\rag\13_contextual_retrieval.py | 1787 bytes
+\phase_2_advanced_rag_optimization\rag\14_parent_child_chunking.py | 1795 bytes
+\phase_2_advanced_rag_optimization\rag\15_document_parsing.py | 1110 bytes
+\phase_2_advanced_rag_optimization\rag\16_citations.py | 1745 bytes
+\phase_2_advanced_rag_optimization\rag\17_graphrag.py | 1088 bytes
+\phase_2_advanced_rag_optimization\rag\18_agentic_rag.py | 1097 bytes
+\phase_2_advanced_rag_optimization\rag\19_recall_k.py | 1739 bytes
+\phase_2_advanced_rag_optimization\rag\20_mrr_and_ndcg.py | 1759 bytes
+\phase_2_advanced_rag_optimization\rag\README.md | 1443 bytes
+\phase_3_ai_agents_agentic_rag\README.md | 197 bytes
+\phase_3_ai_agents_agentic_rag\ai_agents\01_tool_calling.py | 1366 bytes
+\phase_3_ai_agents_agentic_rag\ai_agents\02_the_agent_loop.py | 1380 bytes
+\phase_3_ai_agents_agentic_rag\ai_agents\03_react_pattern.py | 1375 bytes
+\phase_3_ai_agents_agentic_rag\ai_agents\04_planning.py | 1350 bytes
+\phase_3_ai_agents_agentic_rag\ai_agents\05_reflection.py | 1360 bytes
+\phase_3_ai_agents_agentic_rag\ai_agents\06_short_term_memory.py | 1395 bytes
+\phase_3_ai_agents_agentic_rag\ai_agents\07_long_term_memory.py | 1390 bytes
+\phase_3_ai_agents_agentic_rag\ai_agents\08_mcp_servers.py | 1361 bytes
+\phase_3_ai_agents_agentic_rag\ai_agents\09_mcp_clients.py | 1361 bytes
+\phase_3_ai_agents_agentic_rag\ai_agents\10_agent_skills.py | 1370 bytes
+\phase_3_ai_agents_agentic_rag\ai_agents\11_multi_agent_handoffs.py | 1410 bytes
+\phase_3_ai_agents_agentic_rag\ai_agents\12_orchestrator_worker_pattern.py | 1445 bytes
+\phase_3_ai_agents_agentic_rag\ai_agents\13_langgraph.py | 1355 bytes
+\phase_3_ai_agents_agentic_rag\ai_agents\14_openai_agents_sdk.py | 1395 bytes
+\phase_3_ai_agents_agentic_rag\ai_agents\15_state_and_checkpoints.py | 1415 bytes
+\phase_3_ai_agents_agentic_rag\ai_agents\16_human_in_the_loop.py | 1395 bytes
+\phase_3_ai_agents_agentic_rag\ai_agents\17_context_engineering.py | 1405 bytes
+\phase_3_ai_agents_agentic_rag\ai_agents\18_context_compaction.py | 1400 bytes
+\phase_3_ai_agents_agentic_rag\ai_agents\19_stop_conditions.py | 1385 bytes
+\phase_3_ai_agents_agentic_rag\ai_agents\20_a2a_protocol.py | 1370 bytes
+\phase_3_ai_agents_agentic_rag\ai_agents\README.md | 1531 bytes
+\phase_4_evaluation_production\README.md | 242 bytes
+\phase_4_evaluation_production\ai_security\01_prompt_injection.py | 1385 bytes
+\phase_4_evaluation_production\ai_security\02_indirect_prompt_injection.py | 1412 bytes
+\phase_4_evaluation_production\ai_security\03_jailbreaks.py | 1367 bytes
+\phase_4_evaluation_production\ai_security\04_owasp_top_10_for_llms.py | 1400 bytes
+\phase_4_evaluation_production\ai_security\05_input_guardrails.py | 1385 bytes
+\phase_4_evaluation_production\ai_security\06_output_validation.py | 1388 bytes
+\phase_4_evaluation_production\ai_security\07_pii_redaction.py | 1376 bytes
+\phase_4_evaluation_production\ai_security\08_data_leakage.py | 1373 bytes
+\phase_4_evaluation_production\ai_security\09_least_privilege_tools.py | 1400 bytes
+\phase_4_evaluation_production\ai_security\10_tool_sandboxing.py | 1382 bytes
+\phase_4_evaluation_production\ai_security\11_secrets_management.py | 1387 bytes
+\phase_4_evaluation_production\ai_security\12_api_key_rotation.py | 1385 bytes
+\phase_4_evaluation_production\ai_security\13_authorization_for_agents.py | 1409 bytes
+\phase_4_evaluation_production\ai_security\14_human_approval_for_actions.py | 1415 bytes
+\phase_4_evaluation_production\ai_security\15_content_moderation.py | 1391 bytes
+\phase_4_evaluation_production\ai_security\16_data_poisoning.py | 1379 bytes
+\phase_4_evaluation_production\ai_security\17_access_control_in_rag.py | 1400 bytes
+\phase_4_evaluation_production\ai_security\18_mcp_server_trust.py | 1385 bytes
+\phase_4_evaluation_production\ai_security\19_audit_logging.py | 1376 bytes
+\phase_4_evaluation_production\ai_security\20_red_teaming.py | 1370 bytes
+\phase_4_evaluation_production\ai_security\README.md | 1617 bytes
+\phase_4_evaluation_production\ai_system_design\01_model_routing.py | 1227 bytes
+\phase_4_evaluation_production\ai_system_design\02_model_fallbacks.py | 1229 bytes
+\phase_4_evaluation_production\ai_system_design\03_semantic_caching.py | 1236 bytes
+\phase_4_evaluation_production\ai_system_design\04_prefix_caching.py | 1230 bytes
+\phase_4_evaluation_production\ai_system_design\05_token_budgets.py | 1227 bytes
+\phase_4_evaluation_production\ai_system_design\06_streaming_responses.py | 1245 bytes
+\phase_4_evaluation_production\ai_system_design\07_time_to_first_token.py | 1245 bytes
+\phase_4_evaluation_production\ai_system_design\08_throughput_vs_latency.py | 1251 bytes
+\phase_4_evaluation_production\ai_system_design\09_inference_serving_with_vllm.py | 1269 bytes
+\phase_4_evaluation_production\ai_system_design\10_continuous_batching.py | 1245 bytes
+\phase_4_evaluation_production\ai_system_design\11_pagedattention.py | 1230 bytes
+\phase_4_evaluation_production\ai_system_design\12_speculative_decoding.py | 1248 bytes
+\phase_4_evaluation_production\ai_system_design\13_gpu_vs_api_cost.py | 1233 bytes
+\phase_4_evaluation_production\ai_system_design\14_batch_inference.py | 1233 bytes
+\phase_4_evaluation_production\ai_system_design\15_async_job_pipelines.py | 1245 bytes
+\phase_4_evaluation_production\ai_system_design\16_provider_rate_limits.py | 1248 bytes
+\phase_4_evaluation_production\ai_system_design\17_multi_tenant_design.py | 1245 bytes
+\phase_4_evaluation_production\ai_system_design\18_rag_vs_fine_tuning.py | 1242 bytes
+\phase_4_evaluation_production\ai_system_design\19_context_window_management.py | 1263 bytes
+\phase_4_evaluation_production\ai_system_design\20_cost_optimization.py | 1239 bytes
+\phase_4_evaluation_production\ai_system_design\README.md | 1657 bytes
+\phase_4_evaluation_production\backend\01_rest_apis.py | 1201 bytes
+\phase_4_evaluation_production\backend\02_http_and_status_codes.py | 1241 bytes
+\phase_4_evaluation_production\backend\03_async_and_await.py | 1223 bytes
+\phase_4_evaluation_production\backend\04_streaming_with_sse.py | 1232 bytes
+\phase_4_evaluation_production\backend\05_websockets.py | 1204 bytes
+\phase_4_evaluation_production\backend\06_authentication_with_jwt.py | 1247 bytes
+\phase_4_evaluation_production\backend\07_oauth_2_0.py | 1205 bytes
+\phase_4_evaluation_production\backend\08_sql_vs_nosql.py | 1214 bytes
+\phase_4_evaluation_production\backend\09_database_indexing.py | 1229 bytes
+\phase_4_evaluation_production\backend\10_transactions_and_acid.py | 1241 bytes
+\phase_4_evaluation_production\backend\11_caching_with_redis.py | 1232 bytes
+\phase_4_evaluation_production\backend\12_message_queues.py | 1220 bytes
+\phase_4_evaluation_production\backend\13_background_jobs.py | 1223 bytes
+\phase_4_evaluation_production\backend\14_rate_limiting.py | 1217 bytes
+\phase_4_evaluation_production\backend\15_idempotency_keys.py | 1226 bytes
+\phase_4_evaluation_production\backend\16_retries_with_backoff.py | 1238 bytes
+\phase_4_evaluation_production\backend\17_file_uploads_to_s3.py | 1232 bytes
+\phase_4_evaluation_production\backend\18_pagination.py | 1208 bytes
+\phase_4_evaluation_production\backend\19_input_validation_with_pydantic.py | 1264 bytes
+\phase_4_evaluation_production\backend\20_logging_and_monitoring.py | 1244 bytes
+\phase_4_evaluation_production\backend\README.md | 1589 bytes
+\phase_4_evaluation_production\deployment\01_docker.py | 1090 bytes
+\phase_4_evaluation_production\deployment\02_docker_compose.py | 1114 bytes
+\phase_4_evaluation_production\deployment\03_kubernetes_basics.py | 1123 bytes
+\phase_4_evaluation_production\deployment\04_ci_cd_pipelines.py | 1117 bytes
+\phase_4_evaluation_production\deployment\05_github_actions.py | 1114 bytes
+\phase_4_evaluation_production\deployment\06_eval_gates_in_ci.py | 1120 bytes
+\phase_4_evaluation_production\deployment\07_environment_configs.py | 1125 bytes
+\phase_4_evaluation_production\deployment\08_infrastructure_as_code.py | 1138 bytes
+\phase_4_evaluation_production\deployment\09_serverless_functions.py | 1132 bytes
+\phase_4_evaluation_production\deployment\10_gpu_instances.py | 1111 bytes
+\phase_4_evaluation_production\deployment\11_ollama_for_local_models.py | 1141 bytes
+\phase_4_evaluation_production\deployment\12_autoscaling.py | 1105 bytes
+\phase_4_evaluation_production\deployment\13_load_balancing.py | 1114 bytes
+\phase_4_evaluation_production\deployment\14_canary_releases.py | 1117 bytes
+\phase_4_evaluation_production\deployment\15_feature_flags.py | 1111 bytes
+\phase_4_evaluation_production\deployment\16_prompt_versioning.py | 1123 bytes
+\phase_4_evaluation_production\deployment\17_model_versioning.py | 1120 bytes
+\phase_4_evaluation_production\deployment\18_health_checks.py | 1107 bytes
+\phase_4_evaluation_production\deployment\19_alerts_and_dashboards.py | 1135 bytes
+\phase_4_evaluation_production\deployment\20_rollbacks.py | 1099 bytes
+\phase_4_evaluation_production\deployment\README.md | 1541 bytes
+\phase_4_evaluation_production\evals\01_golden_datasets.py | 1580 bytes
+\phase_4_evaluation_production\evals\02_error_analysis.py | 1581 bytes
+\phase_4_evaluation_production\evals\03_llm_as_a_judge.py | 1581 bytes
+\phase_4_evaluation_production\evals\04_pairwise_comparison.py | 1596 bytes
+\phase_4_evaluation_production\evals\05_rubric_scoring.py | 1581 bytes
+\phase_4_evaluation_production\evals\06_faithfulness.py | 1575 bytes
+\phase_4_evaluation_production\evals\07_answer_relevance.py | 1587 bytes
+\phase_4_evaluation_production\evals\08_context_precision.py | 1590 bytes
+\phase_4_evaluation_production\evals\09_tool_call_accuracy.py | 1593 bytes
+\phase_4_evaluation_production\evals\10_trajectory_evals.py | 1587 bytes
+\phase_4_evaluation_production\evals\11_regression_evals_in_ci.py | 1605 bytes
+\phase_4_evaluation_production\evals\12_a_b_testing_prompts.py | 1596 bytes
+\phase_4_evaluation_production\evals\13_human_labeling.py | 1581 bytes
+\phase_4_evaluation_production\evals\14_synthetic_test_data.py | 1596 bytes
+\phase_4_evaluation_production\evals\15_tracing.py | 1560 bytes
+\phase_4_evaluation_production\evals\16_langfuse.py | 1563 bytes
+\phase_4_evaluation_production\evals\17_opentelemetry_for_llms.py | 1605 bytes
+\phase_4_evaluation_production\evals\18_p95_latency.py | 1572 bytes
+\phase_4_evaluation_production\evals\19_cost_per_request.py | 1587 bytes
+\phase_4_evaluation_production\evals\20_user_feedback_loops.py | 1596 bytes
+\phase_4_evaluation_production\evals\README.md | 1573 bytes
+\phase_5_capstone_interview\README.md | 223 bytes
+\phase_5_capstone_interview\capstone_agentic_rag\main.py | 246 bytes
+\phase_5_capstone_interview\capstone_agentic_rag\README.md | 676 bytes
+\phase_5_capstone_interview\capstone_agentic_rag\test_smoke.py | 179 bytes
+
+================ EMPTY FILES ================
+\tiktoken)
+
+================ AI CONCEPT SEARCH ================
+\config.py | Line 47 | # ChromaDB will store our document embeddings
+\config.py | Line 49 | CHROMA_DB_PATH = "./embeddings/chroma_db"
+\config.py | Line 53 | # DOCUMENT SETTINGS
+\config.py | Line 56 | # Folder containing our sample documents
+\config.py | Line 58 | DOCUMENTS_PATH = "./documents"
+\create_docx.py | Line 3 | # STEP 22: CREATE A WORD DOCUMENT
+\create_docx.py | Line 6 | # Import Document from python-docx
+\create_docx.py | Line 7 | from docx import Document
+\create_docx.py | Line 9 | # Create a new Word document
+\create_docx.py | Line 10 | doc = Document()
+\create_docx.py | Line 44 | "Python, LangChain, Gemini, Groq, ChromaDB and FastAPI."
+\create_docx.py | Line 47 | # Save the Word document
+\create_docx.py | Line 48 | doc.save("documents/company_report.docx")
+\create_docx.py | Line 51 | print("DOCX document created successfully!")
+\create_sample_documents.py | Line 3 | # CREATE OUR FIRST SAMPLE DOCUMENT
+\create_sample_documents.py | Line 9 | # Create the documents folder if it does not exist
+\create_sample_documents.py | Line 10 | os.makedirs("documents", exist_ok=True)
+\create_sample_documents.py | Line 46 | ChromaDB
+\create_sample_documents.py | Line 47 | FastAPI
+\create_sample_documents.py | Line 54 | file_path = "documents/company_information.txt"
+\create_sample_documents.py | Line 64 | print("Sample document created successfully!")
+\create_sample_documents.py | Line 104 | "documents/employee_data.csv",
+\download_real_html.py | Line 16 | # Create the documents folder if it does not exist
+\download_real_html.py | Line 18 | # "documents"	Folder name
+\download_real_html.py | Line 21 | os.makedirs("documents", exist_ok=True)
+\download_real_html.py | Line 29 | headers={"User-Agent": "Mozilla/5.0"}
+\download_real_html.py | Line 38 | # Save the original HTML into our documents folder
+\download_real_html.py | Line 39 | file_path = "documents/nasa_climate_evidence.html"
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 6 | A beginner-friendly, runnable revision lab covering the concepts that were
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 58 | # Import functools so we can wrap a function with a simple cache.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 59 | from functools import lru_cache
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 200 | # QLoRA: combines quantized model weights with LoRA adapters to reduce memory use.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 201 | # Quantization: represents model weights with fewer bits to reduce memory use.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 230 | print("Simple tokens:", simple_tokenizer("RAG connects documents to an LLM."))
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 232 | print("Tokens within budget:", fit_to_token_budget("RAG connects documents to an LLM.", 6))
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 237 | # Provide a small source document for a grounding example.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 238 | source = "RAG retrieves relevant documents and gives them to a language model."
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 240 | answer = "RAG retrieves relevant documents."
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 255 | def cosine_similarity(vector_a: list[float], vector_b: list[float]) -> float:
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 283 | # BM25 ranks documents using query-term frequency and document-length
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 285 | def bm25_score(query: str, document: str, all_documents: list[str], k1: float = 1.5, b: float = 0.75) -> float:
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 289 | # Convert the current document into lowercase words.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 290 | document_terms = re.findall(r"\w+", document.lower())
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 292 | # Calculate the average document length in the collection.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 293 | average_length = sum(len(re.findall(r"\w+", doc)) for doc in all_documents) / max(len(all_documents), 1)
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 300 | # Count how many documents contain this term.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 301 | document_frequency = sum(term in re.findall(r"\w+", doc.lower()) for doc in all_documents)
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 303 | # Calculate inverse document frequency so rarer terms get more weight.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 304 | idf = math.log(1 + (len(all_documents) - document_frequency + 0.5) / (document_frequency + 0.5))
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 306 | # Count how often this term appears in the current document.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 307 | term_frequency = document_terms.count(term)
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 309 | # Calculate the document-length normalization part.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 310 | length_adjustment = k1 * (1 - b + b * len(document_terms) / max(average_length, 1))
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 315 | # Return the final score for this document.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 320 | # Metadata is information about a document, such as source, date, owner, or category.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 321 | def filter_by_metadata(documents: list[dict[str, Any]], category: str) -> list[dict[str, Any]]:
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 322 | # Keep only documents whose category matches the requested category.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 323 | return [doc for doc in documents if doc.get("category") == category]
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 332 | # Store the original text as one parent document.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 346 | # CONCEPT: HyDE (Hypothetical Document Embeddings)
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 347 | # HyDE asks a model to draft a hypothetical answer/document, then uses that
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 349 | def create_hypothetical_document(question: str) -> str:
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 351 | return f"A useful document explaining the answer to: {question}"
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 364 | # Recall@k checks whether relevant documents appear in the first k results.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 366 | # Select only the first k retrieved document identifiers.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 370 | # Divide by the total number of known relevant documents.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 376 | # Check each retrieved document together with its one-based rank.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 377 | for rank, document_id in enumerate(retrieved, start=1):
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 378 | # Check whether this document is relevant.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 379 | if document_id in relevant:
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 388 | # Create relevance values: 1 for relevant documents and 0 for others.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 403 | def rerank_documents(query: str, documents: list[str]) -> list[tuple[str, float]]:
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 404 | # Score each document with the BM25 teaching function.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 405 | scored_documents = [(doc, bm25_score(query, doc, documents)) for doc in documents]
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 406 | # Sort documents by score from highest to lowest.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 407 | return sorted(scored_documents, key=lambda item: item[1], reverse=True)
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 414 | # Hybrid search combines semantic vector retrieval with keyword retrieval such as BM25.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 416 | # Contextual retrieval adds document context to chunks before indexing.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 417 | # Document parsing extracts text, tables, and structure from files.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 418 | # Citations connect generated claims to retrieved source documents.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 420 | # Agentic RAG lets an agent decide when and how to retrieve information.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 433 | print("Cosine similarity:", round(cosine_similarity(vector_one, vector_two), 3))
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 435 | # Create a small collection of sample documents.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 436 | documents = [
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 437 | "RAG uses embeddings for semantic document retrieval.",
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 441 | # Rank the sample documents for a keyword query.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 442 | print("BM25 ranking:", rerank_documents("keyword search", documents))
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 444 | # Create documents with category metadata.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 445 | metadata_documents = [
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 449 | # Keep only documents in the AI category.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 450 | print("Metadata filter:", filter_by_metadata(metadata_documents, "AI"))
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 453 | print("Parent-child chunks:", make_parent_child_chunks("RAG retrieves documents and uses context to answer questions.", 4))
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 457 | # Demonstrate the HyDE idea with a hypothetical document.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 458 | print("HyDE example:", create_hypothetical_document("What is hybrid search?"))
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 460 | # Define the order in which documents were retrieved.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 462 | # Define which document identifiers are relevant.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 466 | # Display reciprocal rank for the first relevant document.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 476 | # AREA 3 - AI AGENT CONCEPTS THAT NEED MORE PRACTICE
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 480 | # ReAct means Reason + Act: an agent alternates between deciding what to do,
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 482 | def react_demo(question: str, tool: Callable[[str], str]) -> str:
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 483 | # Print the task the agent has received.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 484 | print("Agent task:", question)
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 487 | # Call the supplied tool with the chosen action.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 488 | observation = tool(action)
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 489 | # Return a response based on the tool's observation.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 493 | # CONCEPT: Tool calling
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 494 | # A tool is an ordinary function that an AI application makes available to an agent.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 495 | def calculator_tool(expression: str) -> str:
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 504 | # Convert the numeric answer to text for the tool response.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 508 | # CONCEPT: Short-term memory
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 509 | # Short-term memory stores information during one conversation or task.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 510 | class ShortTermMemory:
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 511 | # Create the memory object.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 516 | # Add one message to memory.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 527 | # CONCEPT: Long-term memory
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 528 | # Long-term memory persists beyond one run; this simple example writes JSON to disk.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 529 | def save_long_term_memory(filename: str, memory: dict[str, Any]) -> None:
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 533 | json.dump(memory, file, indent=4)
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 555 | # Stop conditions prevent an agent from running forever.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 568 | # MCP server: exposes tools or resources through the Model Context Protocol.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 569 | # MCP client: connects to an MCP server and discovers or calls its tools.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 570 | # Agent skills: reusable instructions and capabilities for a specific task.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 571 | # Multi-agent handoff: one agent passes work and context to another agent.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 572 | # Orchestrator-worker: an orchestrator assigns subtasks to worker agents.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 573 | # LangGraph: a graph-based framework for stateful agent workflows.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 576 | # Context engineering: select and organize the information an agent receives.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 578 | # A2A: Agent-to-Agent protocol for communication between agents.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 579 | # OpenAI Agents SDK: one framework option; the same concepts can be implemented
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 580 | # with other agent frameworks. This file uses framework-neutral Python examples.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 583 | def demo_agent_concepts() -> None:
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 584 | # Display the AI Agents section heading.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 585 | show_section("AREA 3 - AI AGENT CONCEPTS")
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 587 | # Run a safe arithmetic tool through the agent demonstration.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 588 | print("Tool calling / ReAct:", react_demo("12 * 4", calculator_tool))
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 590 | # Create a short-term memory object.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 591 | memory = ShortTermMemory()
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 592 | # Save the user's first message in memory.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 593 | memory.add("I am learning RAG.")
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 594 | # Save another message in memory.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 595 | memory.add("Next I will study evaluation.")
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 596 | # Display all messages in short-term memory.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 597 | print("Short-term memory:", memory.read())
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 602 | print("Reflection:", reflect_on_answer("RAG retrieves supporting documents."))
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 606 | # Save an example of long-term memory to a local JSON file.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 607 | save_long_term_memory("phase_2_agent_memory.json", {"learning_goal": "Become an AI Engineer"})
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 608 | # Confirm that the memory file was written.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 609 | print("Long-term memory saved to phase_2_agent_memory.json")
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 612 | print("Framework topics: LangGraph, MCP, handoffs, checkpoints, human approval, A2A.")
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 669 | if "retrieval" in message or "document" in message:
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 720 | # Faithfulness: whether the answer is supported by the supplied context.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 723 | # Tool-call accuracy: whether an agent selected and used the correct tool.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 724 | # Trajectory evaluation: checks the sequence of agent decisions and tool calls.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 729 | # Langfuse and OpenTelemetry: tools/standards for tracing and observability.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 747 | print("Pairwise winner:", compare_answers("RAG retrieves context.", "RAG retrieves relevant documents and supplies context to a language model."))
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 750 | print("Error category:", categorize_error("Document retrieval returned no results."))
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 844 | # Reserve 55 percent for retrieved documents.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 891 | # PagedAttention: manages attention KV-cache memory in blocks.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 982 | # Give a tool only the permissions it needs for its task.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 983 | def user_can_access_document(user_role: str, document_owner_role: str) -> bool:
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 984 | # Allow an admin to access the document in this simplified example.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 988 | return user_role == document_owner_role
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1011 | # Indirect prompt injection: malicious instructions arrive inside a document,
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1015 | # Input guardrails: inspect or constrain user input before model processing.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1017 | # Tool sandboxing: isolate tools to limit what damage a compromised tool can cause.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1020 | # Agent authorization: check whether an agent is permitted to perform an action.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1023 | # Access control in RAG: retrieve only documents the current user is allowed to see.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1024 | # MCP server trust: verify the identity, source, permissions, and behaviour of MCP servers.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1043 | model_output = {"answer": "RAG uses retrieved context.", "source": "document_1"}
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1047 | # Check whether a regular user can access a document owned by that role.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1048 | print("Access allowed:", user_can_access_document("analyst", "analyst"))
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1054 | write_audit_log("document_search", "learner_01")
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1098 | # Docker packages an application and its dependencies into a container image.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1099 | # Docker Compose runs multiple related containers using one configuration file.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1132 | # Explain that infrastructure deployment needs separate tools and configuration.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1133 | print("Deployment tools to practise: Docker, Compose, GitHub Actions, Kubernetes, monitoring.")
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1186 | async def async_task(task_name: str) -> str:
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1194 | async def run_async_tasks() -> list[str]:
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1198 | async_task("Document loading"),
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1235 | # WebSockets support two-way communication between client and server.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1236 | # JWT is a signed token format often used to carry authentication claims.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1242 | # Redis is an in-memory data store often used for caching and coordination.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1248 | # Pydantic validates and parses Python data models.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1250 | # A real production backend should use established libraries for JWT, OAuth,
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1295 | "pgvector", "HNSW indexes", "BM25", "Hybrid search", "Reranking",
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1297 | "Document parsing", "Citations", "GraphRAG", "Agentic RAG",
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1300 | # Agent concepts that need stronger understanding or implementation.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1301 | "AI Agents": [
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1302 | "ReAct", "Planning", "Reflection", "Short-term memory", "Long-term memory",
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1303 | "MCP servers", "MCP clients", "Agent skills", "Multi-agent handoffs",
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1304 | "Orchestrator-worker", "LangGraph", "State and checkpoints",
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1311 | "Rubric scoring", "Faithfulness", "Answer relevance", "Context precision",
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1312 | "Tool call accuracy", "Trajectory evals", "Regression evals in CI",
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1329 | "OWASP Top 10 for LLMs", "Input guardrails", "Output validation",
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1330 | "PII redaction", "Data leakage", "Least-privilege tools",
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1331 | "Tool sandboxing", "Secrets management", "API key rotation",
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1332 | "Authorization for agents", "Human approval", "Content moderation",
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1333 | "Data poisoning", "Access control in RAG", "MCP server trust",
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1338 | "Docker", "Docker Compose", "Kubernetes basics", "CI/CD pipelines",
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1348 | "WebSockets", "JWT", "OAuth 2.0", "SQL vs NoSQL", "Database indexing",
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1351 | "File uploads to S3", "Pagination", "Pydantic validation",
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1388 | # Run the AI agent learning demonstrations.
+\phase_2_Advanced_RAG_Engineering_lab.py | Line 1389 | demo_agent_concepts()
+\requirements.txt | Line 9 | chromadb
+\requirements.txt | Line 25 | #ChromaDB / FAISS	Vector databases
+\test_gemini.py | Line 3 | from langchain_google_genai import ChatGoogleGenerativeAI
+\test_gemini.py | Line 16 | llm = ChatGoogleGenerativeAI(
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 6 | # 1. TextLoader       -> TXT files
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 7 | # 2. CSVLoader        -> CSV files
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 8 | # 3. BSHTMLLoader     -> HTML files
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 9 | # 4. PyPDFLoader      -> PDF files
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 10 | # 5. Docx2txtLoader   -> DOCX files
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 11 | # 6. DirectoryLoader  -> Load multiple files from a folder
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 13 | # All loaded content is converted into LangChain Documents.
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 21 | from langchain_community.document_loaders import (
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 22 | TextLoader,
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 23 | CSVLoader,
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 24 | BSHTMLLoader,
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 25 | PyPDFLoader,
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 26 | Docx2txtLoader,
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 27 | DirectoryLoader
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 31 | # STEP 2: DEFINE DOCUMENT LOCATIONS
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 39 | DOCUMENTS_FOLDER = PROJECT_ROOT / "documents"
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 42 | # STEP 3: CHECK DOCUMENT FOLDER
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 44 | if not DOCUMENTS_FOLDER.exists():
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 46 | f"Documents folder not found: {DOCUMENTS_FOLDER}"
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 55 | # TextLoader reads ordinary .txt files.
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 57 | text_file = DOCUMENTS_FOLDER / "company_information.txt"
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 59 | text_loader = TextLoader(
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 64 | text_documents = text_loader.load()
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 67 | print("Total documents:", len(text_documents))
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 68 | print("Content:", text_documents[0].page_content[:200])
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 69 | print("Metadata:", text_documents[0].metadata)
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 74 | # CSVLoader converts each CSV row into a separate Document.
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 76 | csv_file = DOCUMENTS_FOLDER / "employee_data.csv"
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 78 | csv_loader = CSVLoader(
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 83 | csv_documents = csv_loader.load()
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 86 | print("Total CSV rows:", len(csv_documents))
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 87 | print("First row:", csv_documents[0].page_content)
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 88 | print("Metadata:", csv_documents[0].metadata)
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 93 | # BSHTMLLoader extracts readable text from HTML.
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 96 | html_file = DOCUMENTS_FOLDER / "nasa_climate_evidence.html"
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 98 | html_loader = BSHTMLLoader(
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 103 | html_documents = html_loader.load()
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 106 | print("Total HTML documents:", len(html_documents))
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 107 | print("Content:", html_documents[0].page_content[:200])
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 108 | print("Metadata:", html_documents[0].metadata)
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 113 | # PyPDFLoader generally creates one Document per PDF page.
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 115 | pdf_file = DOCUMENTS_FOLDER / "TechVision_AI_RAG_Learning_Dataset.pdf"
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 117 | pdf_loader = PyPDFLoader(str(pdf_file))
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 119 | pdf_documents = pdf_loader.load()
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 122 | print("Total PDF pages:", len(pdf_documents))
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 123 | print("First page:", pdf_documents[0].page_content[:200])
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 124 | print("Metadata:", pdf_documents[0].metadata)
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 129 | # Docx2txtLoader extracts text from Word documents.
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 131 | docx_file = DOCUMENTS_FOLDER / "company_report.docx"
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 133 | docx_loader = Docx2txtLoader(str(docx_file))
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 135 | docx_documents = docx_loader.load()
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 138 | print("Total DOCX documents:", len(docx_documents))
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 139 | print("Content:", docx_documents[0].page_content[:200])
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 140 | print("Metadata:", docx_documents[0].metadata)
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 143 | # STEP 9: COMBINE ALL DOCUMENTS
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 145 | # Each loader returns a list of LangChain Document objects.
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 148 | all_documents = (
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 149 | text_documents
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 150 | + csv_documents
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 151 | + html_documents
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 152 | + pdf_documents
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 153 | + docx_documents
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 156 | print("\n6. COMBINED DOCUMENT COLLECTION")
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 157 | print("Total documents:", len(all_documents))
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 158 | print("Document class:", type(all_documents[0]))
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 159 | print("First document metadata:", all_documents[0].metadata)
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 164 | # DirectoryLoader loads files from a folder using a file pattern.
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 173 | txt_directory_loader = DirectoryLoader(
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 174 | str(DOCUMENTS_FOLDER),
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 176 | loader_cls=TextLoader,
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 180 | directory_txt_documents = txt_directory_loader.load()
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 185 | csv_directory_loader = DirectoryLoader(
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 186 | str(DOCUMENTS_FOLDER),
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 188 | loader_cls=CSVLoader,
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 192 | directory_csv_documents = csv_directory_loader.load()
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 197 | html_directory_loader = DirectoryLoader(
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 198 | str(DOCUMENTS_FOLDER),
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 200 | loader_cls=BSHTMLLoader,
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 204 | directory_html_documents = html_directory_loader.load()
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 209 | pdf_directory_loader = DirectoryLoader(
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 210 | str(DOCUMENTS_FOLDER),
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 212 | loader_cls=PyPDFLoader
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 215 | directory_pdf_documents = pdf_directory_loader.load()
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 220 | docx_directory_loader = DirectoryLoader(
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 221 | str(DOCUMENTS_FOLDER),
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 223 | loader_cls=Docx2txtLoader
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 226 | directory_docx_documents = docx_directory_loader.load()
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 231 | directory_documents = (
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 232 | directory_txt_documents
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 233 | + directory_csv_documents
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 234 | + directory_html_documents
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 235 | + directory_pdf_documents
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 236 | + directory_docx_documents
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 239 | print("TXT documents:", len(directory_txt_documents))
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 240 | print("CSV documents:", len(directory_csv_documents))
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 241 | print("HTML documents:", len(directory_html_documents))
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 242 | print("PDF pages:", len(directory_pdf_documents))
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 243 | print("DOCX documents:", len(directory_docx_documents))
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 245 | print("\nTotal DirectoryLoader documents:", len(directory_documents))
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 248 | # STEP 12: INSPECT A DOCUMENT
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 250 | # Every LangChain Document has:
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 254 | print("\n8. DOCUMENT STRUCTURE")
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 257 | sample_document = directory_documents[0]
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 259 | print("Document type:", type(sample_document))
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 261 | print(sample_document.page_content[:300])
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 264 | print(sample_document.metadata)
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 273 | print("Individual loader documents:", len(all_documents))
+\01_Data_Ingestion\01_multiple_document_loaders.py | Line 274 | print("DirectoryLoader documents:", len(directory_documents))
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 3 | **Code:** `01_multiple_document_loaders.py`
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 15 | 4. Return LangChain `Document` objects.
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 16 | 5. Combine documents for later chunking and indexing.
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 20 | LangChain is a framework that provides reusable components for language-model applications. In this project, its document loaders and `Document` representation were used.
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 24 | | `TextLoader` | Reads `.txt` files |
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 25 | | `CSVLoader` | Converts CSV rows into text documents |
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 26 | | `BSHTMLLoader` | Extracts readable text from HTML |
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 27 | | `PyPDFLoader` | Extracts text from PDF pages |
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 28 | | `Docx2txtLoader` | Extracts text from Word `.docx` files |
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 29 | | `DirectoryLoader` | Loads multiple matching files from a directory using a configured loader |
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 33 | - **TextLoader:** reads plain text, such as notes, policies, and documentation.
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 34 | - **CSVLoader:** reads tabular data. In a row-oriented setup, each row becomes a document. It does not create a relational database or perform SQL analysis.
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 35 | - **BSHTMLLoader:** extracts readable text from HTML markup.
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 36 | - **PyPDFLoader:** extracts text from PDF pages and commonly returns page-level documents with page metadata. Scanned PDFs may require OCR; complex layouts and tables may not extract perfectly.
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 37 | - **Docx2txtLoader:** extracts text from Word documents.
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 38 | - **DirectoryLoader:** processes multiple matching files. Different file types may need separate loader configurations.
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 40 | ## LangChain Document
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 42 | A `Document` commonly contains:
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 50 | Document(
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 62 | | Source | Documents |
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 71 | The directory-loading demonstration also reported 15 documents. These counts reflect this project's supplied dataset and configuration.
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 78 | 2. Split long documents into chunks.
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 95 | **What is a LangChain Document?** A structured object commonly containing `page_content` and `metadata`.
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 99 | **What does DirectoryLoader do?** Loads multiple matching files from a directory using a configured loader.
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 101 | **Does PyPDFLoader perform OCR?** Do not assume so; scanned PDFs generally need OCR.
+\01_Data_Ingestion\02_theory_and_interview_notes.md | Line 107 | Project 1 converts different file formats into a common collection of LangChain documents. Those documents become the input for chunking, embeddings, and retrieval.
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 14 | # 8. ChromaDB Vector Search
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 32 | from langchain_community.document_loaders import (
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 33 | TextLoader,
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 34 | PyPDFLoader
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 38 | CharacterTextSplitter,
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 39 | RecursiveCharacterTextSplitter,
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 40 | MarkdownHeaderTextSplitter,
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 41 | TokenTextSplitter
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 44 | from langchain_community.embeddings import HuggingFaceEmbeddings
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 46 | from langchain_community.vectorstores import Chroma
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 48 | from langchain_experimental.text_splitter import SemanticChunker
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 61 | # STEP 3: LOAD SOURCE DOCUMENTS
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 63 | # We will use the existing TXT and PDF documents.
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 64 | # Both are already present in the documents folder.
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 66 | DOCUMENTS_FOLDER = PROJECT_ROOT / "documents"
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 68 | text_file = DOCUMENTS_FOLDER / "company_information.txt"
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 70 | pdf_file = DOCUMENTS_FOLDER / "TechVision_AI_RAG_Learning_Dataset.pdf"
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 73 | raise FileNotFoundError("Required TXT or PDF document is missing.")
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 75 | text_documents = TextLoader(
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 80 | pdf_documents = PyPDFLoader(
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 86 | [doc.page_content for doc in text_documents + pdf_documents]
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 93 | print("\nSOURCE DOCUMENTS")
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 95 | print("TXT documents:", len(text_documents))
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 96 | print("PDF pages:", len(pdf_documents))
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 105 | # CharacterTextSplitter divides text using a chosen separator.
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 111 | character_splitter = CharacterTextSplitter(
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 117 | character_chunks = character_splitter.create_documents(
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 133 | # RecursiveCharacterTextSplitter tries different separators.
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 141 | recursive_splitter = RecursiveCharacterTextSplitter(
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 147 | recursive_chunks = recursive_splitter.create_documents(
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 172 | splitter = RecursiveCharacterTextSplitter(
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 177 | chunks = splitter.create_documents([source_text])
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 189 | # MarkdownHeaderTextSplitter separates content using
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 192 | # This is useful for structured documents.
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 223 | markdown_splitter = MarkdownHeaderTextSplitter(
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 245 | # TokenTextSplitter divides text based on tokens,
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 252 | token_splitter = TokenTextSplitter(
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 258 | token_chunks = token_splitter.create_documents(
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 283 | embedding_model = HuggingFaceEmbeddings(
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 294 | # SemanticChunker groups sentences based on their meaning.
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 305 | semantic_splitter = SemanticChunker(
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 310 | semantic_chunks = semantic_splitter.create_documents(
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 342 | document_embeddings = embedding_model.embed_documents(
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 348 | print("Number of embedded texts:", len(document_embeddings))
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 350 | print("Embedding dimensions:", len(document_embeddings[0]))
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 353 | print(document_embeddings[0][:10])
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 361 | # before it can be compared with document embeddings.
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 386 | def cosine_similarity(vector_a, vector_b):
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 408 | for index, embedding in enumerate(document_embeddings):
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 410 | similarity = cosine_similarity(
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 450 | GoogleGenerativeAIEmbeddings
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 458 | gemini_embeddings = GoogleGenerativeAIEmbeddings(
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 483 | # STEP 15: CHROMADB VECTOR DATABASE
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 486 | # ChromaDB stores document embeddings in a vector database.
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 491 | # does not overwrite your existing chroma_db folder.
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 493 | print("\n12. CHROMADB VECTOR DATABASE")
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 495 | vector_database = Chroma.from_documents(
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 496 | documents=recursive_chunks,
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 500 | print("Documents added to ChromaDB:", len(recursive_chunks))
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 508 | # ChromaDB finds the most similar document chunks.
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 512 | search_results = vector_database.similarity_search(
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 517 | print("\n13. CHROMADB SIMILARITY SEARCH")
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 541 | print("Embedding dimensions:", len(document_embeddings[0]))
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 542 | print("ChromaDB search results:", len(search_results))
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py | Line 551 | print("7. ChromaDB vector search")
+\02_RAG_Fundamentals\02_theory_and_interview_notes.md | Line 14 | A company assistant may not know a private company policy. A RAG application can search company documents, retrieve the relevant passage, and provide it to a language model. RAG retrieves external information at query time; it does not retrain the model on every document.
+\02_RAG_Fundamentals\02_theory_and_interview_notes.md | Line 20 | 1. Load documents.
+\02_RAG_Fundamentals\02_theory_and_interview_notes.md | Line 38 | Chunking divides long documents into smaller pieces. It allows retrieval to find relevant passages rather than always passing an entire document.
+\02_RAG_Fundamentals\02_theory_and_interview_notes.md | Line 44 | **CharacterTextSplitter**
+\02_RAG_Fundamentals\02_theory_and_interview_notes.md | Line 47 | **RecursiveCharacterTextSplitter**
+\02_RAG_Fundamentals\02_theory_and_interview_notes.md | Line 50 | **MarkdownHeaderTextSplitter**
+\02_RAG_Fundamentals\02_theory_and_interview_notes.md | Line 51 | Uses Markdown headings to divide content and can preserve heading context in metadata. Useful when document hierarchy matters.
+\02_RAG_Fundamentals\02_theory_and_interview_notes.md | Line 53 | **TokenTextSplitter**
+\02_RAG_Fundamentals\02_theory_and_interview_notes.md | Line 95 | **Compatibility:** use a compatible embedding model and configuration for both indexing documents and embedding queries. Do not mix unrelated embedding spaces in one collection.
+\02_RAG_Fundamentals\02_theory_and_interview_notes.md | Line 107 | ## 8. ChromaDB
+\02_RAG_Fundamentals\02_theory_and_interview_notes.md | Line 109 | Chroma is a vector database/vector store. It stores embeddings along with associated document text and metadata.
+\02_RAG_Fundamentals\02_theory_and_interview_notes.md | Line 114 | 2. Chroma calls the configured embedding function.
+\02_RAG_Fundamentals\02_theory_and_interview_notes.md | Line 118 | 6. Return matching documents and metadata.
+\02_RAG_Fundamentals\02_theory_and_interview_notes.md | Line 133 | | ChromaDB search results | 3 |
+\02_RAG_Fundamentals\02_theory_and_interview_notes.md | Line 135 | The ChromaDB search was an in-memory demonstration and did not replace the separate persistent database used later.
+\02_RAG_Fundamentals\02_theory_and_interview_notes.md | Line 150 | **Why chunk documents?** To make retrieval more focused and manage the amount of context.
+\02_RAG_Fundamentals\02_theory_and_interview_notes.md | Line 166 | **Why use RecursiveCharacterTextSplitter?** It tries multiple separators to split text while preserving natural structure.
+\02_RAG_Fundamentals\02_theory_and_interview_notes.md | Line 170 | Project 2 explains how documents become searchable: split text into chunks, embed them, store the vectors, and retrieve semantically similar content.
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 8 | # 2. ChromaDB Vector Search
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 9 | # 3. Hybrid Search
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 10 | # 4. Reciprocal Rank Fusion (RRF)
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 12 | # 6. CrossEncoder Reranking
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 29 | from langchain_community.document_loaders import PyPDFLoader
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 31 | from langchain_text_splitters import RecursiveCharacterTextSplitter
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 33 | from langchain_huggingface import HuggingFaceEmbeddings
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 35 | from langchain_chroma import Chroma
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 38 | MultiQueryRetriever,
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 39 | ContextualCompressionRetriever
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 42 | from langchain_classic.retrievers.document_compressors import (
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 46 | from langchain_google_genai import ChatGoogleGenerativeAI
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 50 | from sentence_transformers import CrossEncoder
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 57 | DOCUMENTS_FOLDER = PROJECT_ROOT / "documents"
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 59 | CHROMA_FOLDER = PROJECT_ROOT / "chroma_db"
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 68 | PDF_PATH = DOCUMENTS_FOLDER / "TechVision_AI_RAG_Learning_Dataset.pdf"
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 80 | # STEP 3: LOAD PDF DOCUMENTS
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 82 | # PyPDFLoader extracts PDF pages into LangChain Documents.
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 84 | pdf_loader = PyPDFLoader(str(PDF_PATH))
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 86 | documents = pdf_loader.load()
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 89 | print("Total PDF pages:", len(documents))
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 92 | # STEP 4: SPLIT DOCUMENTS INTO CHUNKS
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 94 | # RecursiveCharacterTextSplitter creates smaller text pieces.
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 97 | splitter = RecursiveCharacterTextSplitter(
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 102 | chunks = splitter.split_documents(documents)
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 104 | print("\n2. DOCUMENT CHUNKING")
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 112 | # and querying an existing ChromaDB collection.
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 114 | embedding_model = HuggingFaceEmbeddings(
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 121 | # STEP 6: CONNECT TO EXISTING CHROMADB
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 127 | vector_database = Chroma(
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 130 | persist_directory=str(CHROMA_FOLDER)
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 137 | "The ChromaDB collection is empty. "
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 141 | print("\n4. CHROMADB CONNECTION")
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 159 | tokenized_documents = [
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 164 | bm25 = BM25Okapi(tokenized_documents)
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 183 | for index, document in enumerate(bm25_results, start=1):
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 185 | print(document.page_content[:250])
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 188 | # STEP 9: CHROMADB VECTOR SEARCH
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 190 | # Vector search finds documents based on semantic meaning.
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 192 | vector_results = vector_database.similarity_search(
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 199 | for index, document in enumerate(vector_results, start=1):
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 201 | print(document.page_content[:250])
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 204 | # STEP 10: HYBRID SEARCH USING RRF
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 216 | for rank, document in enumerate(result_list, start=1):
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 218 | document_id = (
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 219 | document.metadata.get("source", ""),
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 220 | document.metadata.get("page", ""),
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 221 | document.page_content
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 224 | if document_id not in combined_results:
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 226 | combined_results[document_id] = {
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 227 | "document": document,
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 231 | combined_results[document_id]["score"] += (
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 241 | hybrid_documents = [
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 242 | item["document"]
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 246 | print("\n8. HYBRID SEARCH: RRF")
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 252 | print(item["document"].page_content[:250])
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 259 | # 2. Diversity among retrieved documents.
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 272 | for index, document in enumerate(mmr_results, start=1):
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 275 | print(document.page_content[:250])
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 280 | # CrossEncoder evaluates query and document together.
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 285 | reranker = CrossEncoder(
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 290 | (query, document.page_content)
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 291 | for document in hybrid_documents
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 294 | rerank_scores = reranker.predict(rerank_pairs)
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 297 | zip(hybrid_documents, rerank_scores),
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 302 | for index, (document, score) in enumerate(
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 309 | print(document.page_content[:250])
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 317 | llm = ChatGoogleGenerativeAI(
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 328 | # MultiQueryRetriever generates alternative versions
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 331 | # This can retrieve relevant documents that a single
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 339 | multi_query_retriever = MultiQueryRetriever.from_llm(
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 348 | print("Total retrieved documents:", len(multi_query_results))
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 350 | for index, document in enumerate(
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 356 | print(document.page_content[:250])
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 361 | # Contextual compression filters retrieved documents.
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 370 | compression_retriever = ContextualCompressionRetriever(
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 377 | print("Compressed documents:", len(compressed_results))
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 379 | for index, document in enumerate(
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 385 | print(document.page_content[:400])
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 394 | print("Original PDF pages:", len(documents))
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 396 | print("ChromaDB stored vectors:", stored_count)
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py | Line 399 | print("Hybrid results:", len(hybrid_documents))
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 12 | - Hybrid search combines retrieval signals.
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 22 | The script loaded the seven-page TechVision AI learning PDF, split it into chunks, created Hugging Face embeddings, and used a persistent Chroma collection named `techvision_rag`.
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 25 | - `PyPDFLoader`
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 26 | - `RecursiveCharacterTextSplitter`
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 27 | - `HuggingFaceEmbeddings`
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 28 | - `Chroma`
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 30 | - `sentence_transformers.CrossEncoder`
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 31 | - Gemini through `ChatGoogleGenerativeAI`
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 41 | BM25 is a ranking function used in information retrieval. It scores documents based on query-term matches. Its scoring considers term frequency, inverse document frequency, and document-length normalization.
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 45 | Example: a query for "access control" can match a document containing "Access control policies restrict access to confidential records."
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 49 | The project used Chroma with `all-MiniLM-L6-v2` embeddings. Vector retrieval embeds a query and compares it with stored document vectors.
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 55 | ## 5. Hybrid search
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 57 | Hybrid search combines lexical/keyword retrieval and semantic/vector retrieval.
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 61 | 2. Chroma vector search returned another ranked list.
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 62 | 3. Reciprocal Rank Fusion combined the rankings.
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 66 | ## 6. Reciprocal Rank Fusion (RRF)
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 74 | Where `d` is a document, `R` is the set of result lists, `k` is a constant, and `rank` is the document's position in a list.
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 78 | Illustration: a document ranked first in one list and third in another receives:
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 88 | **Chroma method:** `max_marginal_relevance_search`
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 92 | 2. Diversity among selected documents.
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 104 | ## 8. CrossEncoder reranking
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 108 | **Class:** `CrossEncoder`
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 110 | A CrossEncoder processes a query and candidate document together and produces a relevance score.
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 112 | | Embedding / bi-encoder retrieval | CrossEncoder |
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 114 | | Encodes query and documents separately | Processes query-document pairs together |
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 118 | A common two-stage design retrieves candidates first, scores query-document pairs with the CrossEncoder, sorts by score, and keeps the strongest results.
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 124 | **Component:** `MultiQueryRetriever`
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 125 | **Model:** Gemini via `ChatGoogleGenerativeAI`
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 127 | Multi-query retrieval asks an LLM to create alternative phrasings of the user's question, retrieves documents for those variants, and combines results.
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 138 | The project successfully retrieved five documents using this step.
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 142 | **Components:** `ContextualCompressionRetriever`, `LLMChainExtractor`
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 149 | The project returned one compressed document.
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 158 | - CrossEncoder reranking
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 170 | | ChromaDB stored vectors | 35 |
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 186 | - CrossEncoder reranking adds latency and compute; use it on a limited candidate set.
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 194 | **What is BM25?** A keyword ranking algorithm using term frequency, inverse document frequency, and length normalization.
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 196 | **What is vector search?** Retrieval based on similarity between query and document embeddings.
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 198 | **Why hybrid search?** It combines exact keyword matching and semantic matching.
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 204 | **What is a CrossEncoder?** A model that jointly processes a query and candidate document to produce a relevance score.
+\03_Advanced_RAG\02_theory_and_interview_notes.md | Line 208 | **Why can CrossEncoder scores be negative?** They are raw model scores, not necessarily probabilities.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 3 | # PROJECT 15: HYBRID SEARCH AND RERANKING
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 13 | # ChromaDB Vector Search
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 15 | # Hybrid Search
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 21 | # LIBRARY 1: PyPDFLoader
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 25 | # PyPDFLoader is a LangChain document loader.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 27 | # LangChain Document objects.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 29 | # A Document object contains:
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 34 | # PyPDFLoader() = creates the PDF loader.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 35 | # load() = reads the PDF and returns Document objects.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 38 | from langchain_community.document_loaders import PyPDFLoader
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 44 | pdf_path = "documents/TechVision_AI_RAG_Learning_Dataset.pdf"
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 47 | loader = PyPDFLoader(pdf_path)
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 50 | documents = loader.load()
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 55 | print("TOTAL PDF PAGES:", len(documents))
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 59 | print(documents[0].page_content[:500])
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 63 | print(documents[0].metadata)
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 67 | # LIBRARY 2: RecursiveCharacterTextSplitter
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 71 | # This library splits large documents into smaller chunks.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 74 | # Large documents are difficult to retrieve efficiently.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 83 | # split_documents() = splits Document objects into smaller
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 84 | # Document objects while preserving their metadata.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 87 | from langchain_text_splitters import RecursiveCharacterTextSplitter
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 93 | text_splitter = RecursiveCharacterTextSplitter(
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 99 | chunks = text_splitter.split_documents(documents)
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 103 | print("TOTAL ORIGINAL PAGES:", len(documents))
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 117 | # LIBRARY 3: HuggingFaceEmbeddings
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 134 | # embed_documents() = converts multiple documents into embeddings.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 136 | # LangChain's Chroma integration can call the embedding model
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 140 | from langchain_huggingface import HuggingFaceEmbeddings
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 146 | embedding_model = HuggingFaceEmbeddings(
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 166 | # LIBRARY 4: ChromaDB
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 170 | # ChromaDB is a vector database.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 173 | # 1. Document text
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 177 | # It allows us to search documents based on semantic similarity.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 187 | # add_documents() = stores documents and their embeddings.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 188 | # similarity_search() = retrieves semantically similar documents.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 190 | # We are reusing the ChromaDB database from Project 14.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 194 | from langchain_chroma import Chroma
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 197 | # PRACTICAL TASK 4: CONNECT TO CHROMADB
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 199 | vector_database = Chroma(
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 202 | persist_directory="chroma_db"
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 205 | print("\n========== LIBRARY 4: CHROMADB ==========")
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 216 | # Retrieve the top 5 semantically relevant documents.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 217 | vector_results = vector_database.similarity_search(
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 224 | for i, document in enumerate(vector_results):
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 228 | print(document.page_content[:300])
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 238 | # It finds documents based on matching words in the query.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 246 | # get_scores() = calculates relevance scores for documents.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 257 | tokenized_documents = [
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 262 | # Create the BM25 model using our document collection.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 263 | bm25 = BM25Okapi(tokenized_documents)
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 281 | # Retrieve the actual documents using their indexes.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 289 | for i, document in enumerate(bm25_results):
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 293 | print(document.page_content[:300])
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 299 | # PRACTICAL TASK 6: HYBRID SEARCH USING RRF
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 303 | # Hybrid search combines:
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 306 | # 2. ChromaDB vector search
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 313 | # RRF = Reciprocal Rank Fusion.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 322 | # A document appearing near the top of both searches
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 332 | # Enumerate each document and its position.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 333 | for rank, document in enumerate(result_list):
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 335 | # Use document text as its unique key.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 336 | document_id = document.page_content
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 338 | # If the document has not been stored yet,
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 340 | if document_id not in combined_results:
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 342 | combined_results[document_id] = {
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 343 | "document": document,
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 349 | combined_results[document_id]["score"] += (
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 354 | # Sort documents by their combined RRF scores.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 361 | # Extract the top 5 actual documents.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 362 | hybrid_documents = [
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 363 | item["document"]
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 367 | print("\n========== HYBRID SEARCH RESULTS ==========")
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 369 | for i, document in enumerate(hybrid_documents):
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 373 | print(document.page_content[:300])
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 377 | # LIBRARY 6: CrossEncoder
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 381 | # CrossEncoder is used for reranking.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 383 | # It evaluates the question and document together.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 385 | # It gives each question-document pair a relevance score.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 390 | # CrossEncoder() = loads the pretrained reranking model.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 393 | # predict() = calculates scores for query-document pairs.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 401 | from sentence_transformers import CrossEncoder
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 406 | # Load the pretrained CrossEncoder model.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 407 | reranker = CrossEncoder(
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 412 | # (user question, retrieved document text)
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 415 | (query, document.page_content)
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 416 | for document in hybrid_documents
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 419 | # Calculate relevance scores for all document pairs.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 420 | rerank_scores = reranker.predict(pairs)
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 422 | # Combine each document with its reranking score.
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 426 | zip(hybrid_documents, rerank_scores),
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 433 | # FINAL OUTPUT: RERANKED DOCUMENTS
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 438 | for i, (document, score) in enumerate(reranked_results):
+\03_Advanced_RAG\15_hybrid_search_reranking.py | Line 446 | print(document.page_content)
+\04_RAG_Production\01_production_rag_app.py | Line 3 | # PDF -> CHUNKS -> EMBEDDINGS -> CHROMADB -> RETRIEVAL
+\04_RAG_Production\01_production_rag_app.py | Line 4 | # -> GEMINI -> CITATIONS -> EVALUATION -> FASTAPI
+\04_RAG_Production\01_production_rag_app.py | Line 15 | # Optional RAGAS evaluation:
+\04_RAG_Production\01_production_rag_app.py | Line 16 | #   python .\04_RAG_Production\01_production_rag_app.py --ragas
+\04_RAG_Production\01_production_rag_app.py | Line 25 | from langchain_community.document_loaders import PyPDFLoader  # Loads PDF pages.
+\04_RAG_Production\01_production_rag_app.py | Line 26 | from langchain_text_splitters import RecursiveCharacterTextSplitter  # Splits pages into chunks.
+\04_RAG_Production\01_production_rag_app.py | Line 27 | from langchain_huggingface import HuggingFaceEmbeddings  # Creates text embeddings.
+\04_RAG_Production\01_production_rag_app.py | Line 28 | from langchain_chroma import Chroma  # Stores and searches vectors.
+\04_RAG_Production\01_production_rag_app.py | Line 29 | from langchain_google_genai import ChatGoogleGenerativeAI  # Connects to Gemini.
+\04_RAG_Production\01_production_rag_app.py | Line 31 | from fastapi import FastAPI, HTTPException  # Creates API endpoints and API errors.
+\04_RAG_Production\01_production_rag_app.py | Line 32 | from pydantic import BaseModel  # Validates incoming API data.
+\04_RAG_Production\01_production_rag_app.py | Line 41 | PDF_PATH = ROOT / "documents" / "TechVision_AI_RAG_Learning_Dataset.pdf"  # Sets the source PDF.
+\04_RAG_Production\01_production_rag_app.py | Line 42 | CHROMA_PATH = ROOT / "chroma_db"  # Uses the existing persistent ChromaDB folder.
+\04_RAG_Production\01_production_rag_app.py | Line 49 | vector_db = None  # Holds the ChromaDB connection.
+\04_RAG_Production\01_production_rag_app.py | Line 59 | pages = PyPDFLoader(str(PDF_PATH)).load()  # Loads the PDF into page documents.
+\04_RAG_Production\01_production_rag_app.py | Line 61 | return pages  # Returns the page documents.
+\04_RAG_Production\01_production_rag_app.py | Line 67 | splitter = RecursiveCharacterTextSplitter(
+\04_RAG_Production\01_production_rag_app.py | Line 71 | chunks = splitter.split_documents(pages)  # Creates chunks and keeps page metadata.
+\04_RAG_Production\01_production_rag_app.py | Line 78 | def connect_vector_database(chunks):  # Creates embeddings and connects to ChromaDB.
+\04_RAG_Production\01_production_rag_app.py | Line 80 | embedding_model = HuggingFaceEmbeddings(
+\04_RAG_Production\01_production_rag_app.py | Line 83 | vector_db = Chroma(
+\04_RAG_Production\01_production_rag_app.py | Line 84 | persist_directory=str(CHROMA_PATH),  # Uses persistent local storage.
+\04_RAG_Production\01_production_rag_app.py | Line 85 | embedding_function=embedding_model,  # Tells Chroma how to embed text.
+\04_RAG_Production\01_production_rag_app.py | Line 90 | vector_db.add_documents(chunks)  # Embeds and stores the chunks.
+\04_RAG_Production\01_production_rag_app.py | Line 91 | print(f"Stored {len(chunks)} chunks in ChromaDB.")  # Confirms storage.
+\04_RAG_Production\01_production_rag_app.py | Line 93 | print(f"Reusing ChromaDB: {current_count} existing vectors.")  # Avoids duplicate insertion.
+\04_RAG_Production\01_production_rag_app.py | Line 99 | def retrieve_documents(question: str):  # Finds chunks relevant to a question.
+\04_RAG_Production\01_production_rag_app.py | Line 102 | return vector_db.similarity_search(question, k=TOP_K)  # Returns the most similar chunks.
+\04_RAG_Production\01_production_rag_app.py | Line 107 | def get_sources(documents):  # Creates readable citations from document metadata.
+\04_RAG_Production\01_production_rag_app.py | Line 109 | for document in documents:  # Checks every retrieved chunk.
+\04_RAG_Production\01_production_rag_app.py | Line 110 | filename = Path(document.metadata.get("source", PDF_PATH.name)).name  # Gets the PDF filename.
+\04_RAG_Production\01_production_rag_app.py | Line 111 | page = int(document.metadata.get("page", 0)) + 1  # Converts page index to human page number.
+\04_RAG_Production\01_production_rag_app.py | Line 126 | llm = ChatGoogleGenerativeAI(
+\04_RAG_Production\01_production_rag_app.py | Line 137 | def generate_answer(question: str, documents):  # Uses Gemini to answer from retrieved context.
+\04_RAG_Production\01_production_rag_app.py | Line 139 | for index, document in enumerate(documents, start=1):  # Numbers each retrieved chunk.
+\04_RAG_Production\01_production_rag_app.py | Line 140 | page = int(document.metadata.get("page", 0)) + 1  # Reads the PDF page number.
+\04_RAG_Production\01_production_rag_app.py | Line 142 | f"[Source {index} | page {page}]\n{document.page_content}"
+\04_RAG_Production\01_production_rag_app.py | Line 146 | You are a document question-answering assistant.
+\04_RAG_Production\01_production_rag_app.py | Line 148 | If the answer is not in the context, say that the document does not provide it.
+\04_RAG_Production\01_production_rag_app.py | Line 178 | documents = retrieve_documents(question)  # Retrieves relevant document chunks.
+\04_RAG_Production\01_production_rag_app.py | Line 179 | if not documents:  # Checks whether retrieval found anything.
+\04_RAG_Production\01_production_rag_app.py | Line 185 | sources = get_sources(documents)  # Creates page citations.
+\04_RAG_Production\01_production_rag_app.py | Line 187 | answer = generate_answer(question, documents)  # Generates the answer.
+\04_RAG_Production\01_production_rag_app.py | Line 191 | answer = "Gemini is temporarily unavailable. Retrieved document excerpts:\n\n" + "\n\n".join(
+\04_RAG_Production\01_production_rag_app.py | Line 192 | document.page_content for document in documents
+\04_RAG_Production\01_production_rag_app.py | Line 214 | results = retrieve_documents(question)  # Retrieves relevant chunks.
+\04_RAG_Production\01_production_rag_app.py | Line 222 | # -------------------- OPTIONAL RAGAS EVALUATION --------------------
+\04_RAG_Production\01_production_rag_app.py | Line 224 | def run_ragas_evaluation():  # Runs RAGAS if it has been installed and configured.
+\04_RAG_Production\01_production_rag_app.py | Line 227 | from ragas import evaluate  # Runs RAGAS evaluation.
+\04_RAG_Production\01_production_rag_app.py | Line 228 | from ragas.metrics import faithfulness, answer_relevancy, context_precision, context_recall  # Imports common RAG metrics.
+\04_RAG_Production\01_production_rag_app.py | Line 230 | print("RAGAS dependencies are not installed.")  # Explains why evaluation cannot run.
+\04_RAG_Production\01_production_rag_app.py | Line 231 | print("Install them with: pip install ragas datasets")  # Gives the installation command.
+\04_RAG_Production\01_production_rag_app.py | Line 241 | print("\nPreparing RAGAS evaluation examples...")  # Displays progress.
+\04_RAG_Production\01_production_rag_app.py | Line 243 | documents = retrieve_documents(question)  # Retrieves context for the question.
+\04_RAG_Production\01_production_rag_app.py | Line 244 | if not documents:  # Skips questions with no retrieved context.
+\04_RAG_Production\01_production_rag_app.py | Line 246 | context_list = [document.page_content for document in documents]  # Converts retrieved documents into context strings.
+\04_RAG_Production\01_production_rag_app.py | Line 248 | answer = generate_answer(question, documents)  # Calls Gemini.
+\04_RAG_Production\01_production_rag_app.py | Line 250 | print(f"Skipping RAGAS row because Gemini failed: {error}")  # Explains why the row is skipped.
+\04_RAG_Production\01_production_rag_app.py | Line 260 | print("No RAGAS evaluation rows were created.")  # Explains the issue.
+\04_RAG_Production\01_production_rag_app.py | Line 264 | print("\nRunning RAGAS metrics...")  # Displays evaluation progress.
+\04_RAG_Production\01_production_rag_app.py | Line 265 | try:  # Runs RAGAS metrics.
+\04_RAG_Production\01_production_rag_app.py | Line 268 | metrics=[faithfulness, answer_relevancy, context_precision, context_recall]
+\04_RAG_Production\01_production_rag_app.py | Line 269 | )  # Measures faithfulness, relevance and context quality.
+\04_RAG_Production\01_production_rag_app.py | Line 270 | print("\nRAGAS RESULTS")  # Displays the results heading.
+\04_RAG_Production\01_production_rag_app.py | Line 272 | except Exception as error:  # Handles RAGAS version or model integration errors.
+\04_RAG_Production\01_production_rag_app.py | Line 273 | print("RAGAS could not complete with the installed package configuration.")  # Explains the failure.
+\04_RAG_Production\01_production_rag_app.py | Line 278 | # -------------------- FASTAPI --------------------
+\04_RAG_Production\01_production_rag_app.py | Line 280 | app = FastAPI(
+\04_RAG_Production\01_production_rag_app.py | Line 284 | )  # Creates the FastAPI application.
+\04_RAG_Production\01_production_rag_app.py | Line 287 | class QuestionRequest(BaseModel):  # Defines the structure of a question request.
+\04_RAG_Production\01_production_rag_app.py | Line 315 | print(f"ChromaDB folder exists: {CHROMA_PATH.exists()}")  # Checks persistent storage.
+\04_RAG_Production\01_production_rag_app.py | Line 317 | print(f"ChromaDB vector count: {count}")  # Displays the vector count.
+\04_RAG_Production\01_production_rag_app.py | Line 321 | print("OpenAPI documentation: http://127.0.0.1:8000/docs")  # Shows the interactive API documentation URL.
+\04_RAG_Production\01_production_rag_app.py | Line 354 | parser.add_argument("--api", action="store_true", help="Start the FastAPI server")  # Adds API mode.
+\04_RAG_Production\01_production_rag_app.py | Line 356 | parser.add_argument("--ragas", action="store_true", help="Run optional RAGAS evaluation")  # Adds RAGAS mode.
+\04_RAG_Production\01_production_rag_app.py | Line 364 | elif args.ragas:  # Checks whether RAGAS mode was requested.
+\04_RAG_Production\01_production_rag_app.py | Line 365 | run_ragas_evaluation()  # Runs optional RAGAS evaluation.
+\04_RAG_Production\01_production_rag_app_backup.py | Line 10 | # LangChain document loader
+\04_RAG_Production\01_production_rag_app_backup.py | Line 11 | from langchain_community.document_loaders import PyPDFLoader
+\04_RAG_Production\01_production_rag_app_backup.py | Line 14 | from langchain_text_splitters import RecursiveCharacterTextSplitter
+\04_RAG_Production\01_production_rag_app_backup.py | Line 17 | from langchain_huggingface import HuggingFaceEmbeddings
+\04_RAG_Production\01_production_rag_app_backup.py | Line 19 | # ChromaDB vector database
+\04_RAG_Production\01_production_rag_app_backup.py | Line 20 | from langchain_chroma import Chroma
+\04_RAG_Production\01_production_rag_app_backup.py | Line 23 | from langchain_google_genai import ChatGoogleGenerativeAI
+\04_RAG_Production\01_production_rag_app_backup.py | Line 26 | from langchain_core.prompts import ChatPromptTemplate
+\04_RAG_Production\01_production_rag_app_backup.py | Line 53 | "documents",
+\04_RAG_Production\01_production_rag_app_backup.py | Line 57 | # Persistent ChromaDB location.
+\04_RAG_Production\01_production_rag_app_backup.py | Line 58 | CHROMA_PATH = os.path.join(
+\04_RAG_Production\01_production_rag_app_backup.py | Line 60 | "chroma_db"
+\04_RAG_Production\01_production_rag_app_backup.py | Line 66 | # Number of document chunks to retrieve.
+\04_RAG_Production\01_production_rag_app_backup.py | Line 71 | # 2. LOAD DOCUMENTS
+\04_RAG_Production\01_production_rag_app_backup.py | Line 74 | def load_documents():
+\04_RAG_Production\01_production_rag_app_backup.py | Line 76 | print("\n1. LOADING DOCUMENT...")
+\04_RAG_Production\01_production_rag_app_backup.py | Line 85 | loader = PyPDFLoader(PDF_PATH)
+\04_RAG_Production\01_production_rag_app_backup.py | Line 87 | documents = loader.load()
+\04_RAG_Production\01_production_rag_app_backup.py | Line 89 | if not documents:
+\04_RAG_Production\01_production_rag_app_backup.py | Line 91 | raise ValueError("No documents were loaded.")
+\04_RAG_Production\01_production_rag_app_backup.py | Line 93 | print(f"PDF pages loaded: {len(documents)}")
+\04_RAG_Production\01_production_rag_app_backup.py | Line 95 | return documents
+\04_RAG_Production\01_production_rag_app_backup.py | Line 99 | # 3. SPLIT DOCUMENTS INTO CHUNKS
+\04_RAG_Production\01_production_rag_app_backup.py | Line 102 | def split_documents(documents):
+\04_RAG_Production\01_production_rag_app_backup.py | Line 104 | print("\n2. SPLITTING DOCUMENT...")
+\04_RAG_Production\01_production_rag_app_backup.py | Line 106 | # Divide documents into smaller chunks.
+\04_RAG_Production\01_production_rag_app_backup.py | Line 107 | splitter = RecursiveCharacterTextSplitter(
+\04_RAG_Production\01_production_rag_app_backup.py | Line 112 | chunks = splitter.split_documents(documents)
+\04_RAG_Production\01_production_rag_app_backup.py | Line 116 | raise ValueError("No document chunks generated.")
+\04_RAG_Production\01_production_rag_app_backup.py | Line 131 | embedding_model = HuggingFaceEmbeddings(
+\04_RAG_Production\01_production_rag_app_backup.py | Line 141 | # 5. CREATE / CONNECT TO CHROMADB
+\04_RAG_Production\01_production_rag_app_backup.py | Line 146 | print("\n4. CONNECTING TO CHROMADB...")
+\04_RAG_Production\01_production_rag_app_backup.py | Line 148 | # Connect to persistent ChromaDB.
+\04_RAG_Production\01_production_rag_app_backup.py | Line 149 | vector_database = Chroma(
+\04_RAG_Production\01_production_rag_app_backup.py | Line 152 | persist_directory=CHROMA_PATH
+\04_RAG_Production\01_production_rag_app_backup.py | Line 162 | print("Storing document chunks...")
+\04_RAG_Production\01_production_rag_app_backup.py | Line 164 | vector_database.add_documents(chunks)
+\04_RAG_Production\01_production_rag_app_backup.py | Line 166 | print("Documents successfully stored!")
+\04_RAG_Production\01_production_rag_app_backup.py | Line 187 | # 6. RETRIEVE RELEVANT DOCUMENTS
+\04_RAG_Production\01_production_rag_app_backup.py | Line 190 | def retrieve_relevant_documents(vector_database, question):
+\04_RAG_Production\01_production_rag_app_backup.py | Line 192 | print("\n5. RETRIEVING RELEVANT DOCUMENTS...")
+\04_RAG_Production\01_production_rag_app_backup.py | Line 194 | # Search ChromaDB using the question.
+\04_RAG_Production\01_production_rag_app_backup.py | Line 195 | retrieved_documents = vector_database.similarity_search(
+\04_RAG_Production\01_production_rag_app_backup.py | Line 200 | if not retrieved_documents:
+\04_RAG_Production\01_production_rag_app_backup.py | Line 202 | raise ValueError("No relevant documents were retrieved.")
+\04_RAG_Production\01_production_rag_app_backup.py | Line 205 | f"\nRetrieved {len(retrieved_documents)} document chunks."
+\04_RAG_Production\01_production_rag_app_backup.py | Line 208 | for index, document in enumerate(
+\04_RAG_Production\01_production_rag_app_backup.py | Line 209 | retrieved_documents,
+\04_RAG_Production\01_production_rag_app_backup.py | Line 213 | print(f"\nDocument {index}:")
+\04_RAG_Production\01_production_rag_app_backup.py | Line 215 | print(document.page_content[:250])
+\04_RAG_Production\01_production_rag_app_backup.py | Line 219 | document.metadata.get("source", "Unknown")
+\04_RAG_Production\01_production_rag_app_backup.py | Line 222 | # PyPDFLoader uses zero-based page numbering.
+\04_RAG_Production\01_production_rag_app_backup.py | Line 223 | page = document.metadata.get("page")
+\04_RAG_Production\01_production_rag_app_backup.py | Line 230 | return retrieved_documents
+\04_RAG_Production\01_production_rag_app_backup.py | Line 237 | def format_sources(retrieved_documents):
+\04_RAG_Production\01_production_rag_app_backup.py | Line 243 | for index, document in enumerate(
+\04_RAG_Production\01_production_rag_app_backup.py | Line 244 | retrieved_documents,
+\04_RAG_Production\01_production_rag_app_backup.py | Line 248 | source_path = document.metadata.get(
+\04_RAG_Production\01_production_rag_app_backup.py | Line 256 | page = document.metadata.get("page")
+\04_RAG_Production\01_production_rag_app_backup.py | Line 278 | def generate_answer(question, retrieved_documents):
+\04_RAG_Production\01_production_rag_app_backup.py | Line 289 | llm = ChatGoogleGenerativeAI(
+\04_RAG_Production\01_production_rag_app_backup.py | Line 295 | # Prepare context from retrieved document chunks.
+\04_RAG_Production\01_production_rag_app_backup.py | Line 298 | for index, document in enumerate(
+\04_RAG_Production\01_production_rag_app_backup.py | Line 299 | retrieved_documents,
+\04_RAG_Production\01_production_rag_app_backup.py | Line 304 | document.metadata.get("source", "Unknown")
+\04_RAG_Production\01_production_rag_app_backup.py | Line 307 | page = document.metadata.get("page")
+\04_RAG_Production\01_production_rag_app_backup.py | Line 318 | {document.page_content}
+\04_RAG_Production\01_production_rag_app_backup.py | Line 326 | prompt = ChatPromptTemplate.from_template(
+\04_RAG_Production\01_production_rag_app_backup.py | Line 378 | def display_sources(retrieved_documents):
+\04_RAG_Production\01_production_rag_app_backup.py | Line 384 | sources = format_sources(retrieved_documents)
+\04_RAG_Production\01_production_rag_app_backup.py | Line 400 | retrieved_documents = retrieve_relevant_documents(
+\04_RAG_Production\01_production_rag_app_backup.py | Line 408 | retrieved_documents
+\04_RAG_Production\01_production_rag_app_backup.py | Line 412 | display_sources(retrieved_documents)
+\04_RAG_Production\01_production_rag_app_backup.py | Line 432 | documents = load_documents()
+\04_RAG_Production\01_production_rag_app_backup.py | Line 435 | chunks = split_documents(documents)
+\04_RAG_Production\01_production_rag_app_backup.py | Line 440 | # Step 4: Connect to ChromaDB.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 4 | # PDF -> CHUNKING -> EMBEDDINGS -> CHROMADB
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 5 | # -> RETRIEVAL -> GEMINI -> CITATIONS -> EVALUATION -> FASTAPI
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 15 | from langchain_community.document_loaders import PyPDFLoader  # Loads PDF documents.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 16 | from langchain_text_splitters import RecursiveCharacterTextSplitter  # Splits documents into chunks.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 17 | from langchain_huggingface import HuggingFaceEmbeddings  # Converts text into vectors.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 18 | from langchain_chroma import Chroma  # Stores vectors in ChromaDB.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 19 | from langchain_google_genai import ChatGoogleGenerativeAI  # Connects to Gemini.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 21 | from fastapi import FastAPI, HTTPException  # Creates API endpoints.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 22 | from pydantic import BaseModel  # Validates API input.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 32 | PDF_PATH = ROOT / "documents" / "TechVision_AI_RAG_Learning_Dataset.pdf"  # PDF file location.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 34 | CHROMA_PATH = ROOT / "chroma_db"  # ChromaDB storage folder.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 36 | COLLECTION_NAME = "production_rag_v1"  # Existing ChromaDB collection.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 44 | TOP_K = 4  # Retrieves four relevant document chunks.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 46 | vector_db = None  # Stores ChromaDB connection.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 52 | # 1. LOAD PDF DOCUMENT
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 61 | pages = PyPDFLoader(str(PDF_PATH)).load()  # Loads all PDF pages.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 74 | splitter = RecursiveCharacterTextSplitter(
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 79 | chunks = splitter.split_documents(pages)  # Splits pages into chunks.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 94 | embedding_model = HuggingFaceEmbeddings(
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 98 | vector_db = Chroma(
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 99 | persist_directory=str(CHROMA_PATH),  # Stores vectors permanently.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 108 | vector_db.add_documents(chunks)  # Adds document chunks.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 110 | print(f"Added {len(chunks)} chunks to ChromaDB.")  # Confirms insertion.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 114 | print(f"Reusing existing ChromaDB data: {existing_count} chunks.")  # Avoids duplicate insertion.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 120 | # 4. RETRIEVE RELEVANT DOCUMENTS
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 123 | def retrieve_documents(question):
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 125 | results = vector_db.similarity_search(
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 130 | return results  # Returns relevant documents.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 137 | def get_source_names(documents):
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 141 | for document in documents:  # Loops through retrieved documents.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 144 | document.metadata.get("source", PDF_PATH.name)
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 148 | document.metadata.get("page", 0)
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 164 | def generate_answer(question, documents):
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 168 | for number, document in enumerate(documents, start=1):  # Numbers each retrieved chunk.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 171 | document.metadata.get("page", 0)
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 175 | f"[Source {number} | page {page_number}] {document.page_content}"
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 186 | llm = ChatGoogleGenerativeAI(
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 239 | documents = retrieve_documents(question)  # Retrieves relevant chunks.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 241 | if not documents:  # Checks whether results were found.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 249 | answer = generate_answer(question, documents)  # Generates answer.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 251 | sources = get_source_names(documents)  # Generates citations.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 278 | results = retrieve_documents(question)  # Retrieves relevant chunks.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 294 | "Note: This is basic retrieval evaluation, not a full RAGAS score."
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 299 | # 9. CREATE FASTAPI APPLICATION
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 302 | app = FastAPI(
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 305 | )  # Creates FastAPI application.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 308 | class QuestionRequest(BaseModel):  # Defines request data structure.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 362 | get_vector_database(chunks)  # Step 3: Creates or reuses ChromaDB.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 371 | help="Start FastAPI server"
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 378 | print("\nStarting FastAPI server...")  # Displays startup message.
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py | Line 384 | )  # Starts FastAPI server.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 10 | A learning script may load a document, retrieve a passage, and print a response. A production-oriented application also needs reliable ingestion, persistent storage, retrieval quality, grounded generation, source traceability, API access, validation, error handling, evaluation, security, and monitoring.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 12 | Using FastAPI or a persistent vector store alone does not automatically make an application production-ready.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 23 | 6. Connect to a persistent Chroma collection.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 27 | The successful run printed `DOCUMENT INGESTION PIPELINE COMPLETED!`.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 48 | ### `PyPDFLoader`
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 50 | Loads the PDF and returns LangChain Document objects, commonly one per page, with source/page metadata.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 52 | ### `RecursiveCharacterTextSplitter`
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 54 | Splits loaded documents using:
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 58 | These are project settings, not universal best values. Evaluate them against the document type and retrieval questions.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 60 | ### `HuggingFaceEmbeddings`
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 62 | The project uses `sentence-transformers/all-MiniLM-L6-v2`. It creates 384-dimensional embeddings. Use a compatible model and configuration for both document indexing and query embedding.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 64 | ### `langchain_chroma.Chroma`
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 66 | Connects LangChain to Chroma for vector storage and retrieval.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 69 | Persistent directory: `chroma_db`
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 83 | **Limitation:** This simple check does not detect whether the source PDF changed. A robust ingestion system should track stable document/chunk IDs and source versions or hashes, and support updates and deletions.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 92 | Resolve PDF and Chroma paths
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 96 | PyPDFLoader reads PDF pages
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 115 | A retriever will accept a user question and find relevant chunks in Chroma. The query is embedded using the same embedding model used for indexing. Chroma searches the stored vectors and returns matching documents and metadata.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 146 | Retrieved documents carry metadata such as source file and page number. The application can return those details alongside the answer.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 150 | ### E. Pydantic
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 152 | Pydantic validates and parses data against declared Python models and types. It can validate API request fields and define structured response models containing an answer and source list.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 156 | ### F. FastAPI
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 158 | FastAPI is a Python framework for creating HTTP APIs. A future endpoint can accept a JSON question and return an answer with source metadata.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 160 | FastAPI defines the API routes and request/response behaviour; it is not itself the web server.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 164 | Uvicorn is an ASGI server that can run the FastAPI application.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 166 | - FastAPI: API application and route definitions.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 184 | Handle missing/unreadable documents, empty questions, embedding failures, vector database errors, Gemini API errors/rate limits, empty retrieval results, invalid requests, timeouts, and unexpected exceptions.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 186 | Log errors safely. Do not write API keys or sensitive document contents to logs.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 192 | - Apply authentication and authorization for private documents.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 193 | - Ensure users retrieve only documents they are allowed to access.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 195 | - Support document update and deletion workflows.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 203 | **Why use persistent Chroma storage?** Indexed vectors can be reused after the process ends.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 207 | **Why use the same embedding model for documents and queries?** Their vectors need to be in a compatible embedding space for meaningful similarity comparisons.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 211 | **What does FastAPI do?** Defines HTTP API routes and request/response handling.
+\04_RAG_Production\02_theory_and_interview_notes.md | Line 215 | **What does Pydantic do?** Validates and parses structured data such as API request and response models.
+\04_RAG_Production\test_gemini.py | Line 4 | from langchain_google_genai import ChatGoogleGenerativeAI
+\04_RAG_Production\test_gemini.py | Line 17 | llm = ChatGoogleGenerativeAI(
+\documents\company_information.txt | Line 34 | ChromaDB
+\documents\company_information.txt | Line 35 | FastAPI
+\phase_2_advanced_rag_optimization\llm\01_tokenization.py | Line 25 | text = "RAG helps an AI answer using documents."
+\phase_2_advanced_rag_optimization\rag\02_cosine_similarity.py | Line 26 | def cosine_similarity(a, b):
+\phase_2_advanced_rag_optimization\rag\02_cosine_similarity.py | Line 38 | document_vector = [2, 1, 1]
+\phase_2_advanced_rag_optimization\rag\02_cosine_similarity.py | Line 39 | print("Cosine similarity:", round(cosine_similarity(query_vector, document_vector), 3))
+\phase_2_advanced_rag_optimization\rag\07_metadata_filtering.py | Line 27 | documents = [
+\phase_2_advanced_rag_optimization\rag\07_metadata_filtering.py | Line 28 | {"id": "D1", "text": "RAG retrieves relevant documents before answering."},
+\phase_2_advanced_rag_optimization\rag\07_metadata_filtering.py | Line 30 | {"id": "D3", "text": "BM25 ranks documents using keyword statistics."},
+\phase_2_advanced_rag_optimization\rag\07_metadata_filtering.py | Line 32 | query = "How does retrieval find relevant documents?"
+\phase_2_advanced_rag_optimization\rag\07_metadata_filtering.py | Line 35 | for doc in documents:
+\phase_2_advanced_rag_optimization\rag\08_bm25_keyword_search.py | Line 27 | documents = [
+\phase_2_advanced_rag_optimization\rag\08_bm25_keyword_search.py | Line 28 | {"id": "D1", "text": "RAG retrieves relevant documents before answering."},
+\phase_2_advanced_rag_optimization\rag\08_bm25_keyword_search.py | Line 30 | {"id": "D3", "text": "BM25 ranks documents using keyword statistics."},
+\phase_2_advanced_rag_optimization\rag\08_bm25_keyword_search.py | Line 32 | query = "How does retrieval find relevant documents?"
+\phase_2_advanced_rag_optimization\rag\08_bm25_keyword_search.py | Line 35 | for doc in documents:
+\phase_2_advanced_rag_optimization\rag\09_hybrid_search.py | Line 2 | LESSON 09: Hybrid Search
+\phase_2_advanced_rag_optimization\rag\09_hybrid_search.py | Line 8 | Understand what Hybrid Search means, where it fits in an AI Engineer system,
+\phase_2_advanced_rag_optimization\rag\09_hybrid_search.py | Line 25 | # Small transparent example for the Hybrid Search idea.
+\phase_2_advanced_rag_optimization\rag\09_hybrid_search.py | Line 27 | documents = [
+\phase_2_advanced_rag_optimization\rag\09_hybrid_search.py | Line 28 | {"id": "D1", "text": "RAG retrieves relevant documents before answering."},
+\phase_2_advanced_rag_optimization\rag\09_hybrid_search.py | Line 30 | {"id": "D3", "text": "BM25 ranks documents using keyword statistics."},
+\phase_2_advanced_rag_optimization\rag\09_hybrid_search.py | Line 32 | query = "How does retrieval find relevant documents?"
+\phase_2_advanced_rag_optimization\rag\09_hybrid_search.py | Line 35 | for doc in documents:
+\phase_2_advanced_rag_optimization\rag\09_hybrid_search.py | Line 44 | print("\nStudy focus: explain how Hybrid Search differs from this simplified baseline.")
+\phase_2_advanced_rag_optimization\rag\10_reranking.py | Line 27 | documents = [
+\phase_2_advanced_rag_optimization\rag\10_reranking.py | Line 28 | {"id": "D1", "text": "RAG retrieves relevant documents before answering."},
+\phase_2_advanced_rag_optimization\rag\10_reranking.py | Line 30 | {"id": "D3", "text": "BM25 ranks documents using keyword statistics."},
+\phase_2_advanced_rag_optimization\rag\10_reranking.py | Line 32 | query = "How does retrieval find relevant documents?"
+\phase_2_advanced_rag_optimization\rag\10_reranking.py | Line 35 | for doc in documents:
+\phase_2_advanced_rag_optimization\rag\11_query_rewriting.py | Line 27 | documents = [
+\phase_2_advanced_rag_optimization\rag\11_query_rewriting.py | Line 28 | {"id": "D1", "text": "RAG retrieves relevant documents before answering."},
+\phase_2_advanced_rag_optimization\rag\11_query_rewriting.py | Line 30 | {"id": "D3", "text": "BM25 ranks documents using keyword statistics."},
+\phase_2_advanced_rag_optimization\rag\11_query_rewriting.py | Line 32 | query = "How does retrieval find relevant documents?"
+\phase_2_advanced_rag_optimization\rag\11_query_rewriting.py | Line 35 | for doc in documents:
+\phase_2_advanced_rag_optimization\rag\12_hyde.py | Line 27 | documents = [
+\phase_2_advanced_rag_optimization\rag\12_hyde.py | Line 28 | {"id": "D1", "text": "RAG retrieves relevant documents before answering."},
+\phase_2_advanced_rag_optimization\rag\12_hyde.py | Line 30 | {"id": "D3", "text": "BM25 ranks documents using keyword statistics."},
+\phase_2_advanced_rag_optimization\rag\12_hyde.py | Line 32 | query = "How does retrieval find relevant documents?"
+\phase_2_advanced_rag_optimization\rag\12_hyde.py | Line 35 | for doc in documents:
+\phase_2_advanced_rag_optimization\rag\13_contextual_retrieval.py | Line 27 | documents = [
+\phase_2_advanced_rag_optimization\rag\13_contextual_retrieval.py | Line 28 | {"id": "D1", "text": "RAG retrieves relevant documents before answering."},
+\phase_2_advanced_rag_optimization\rag\13_contextual_retrieval.py | Line 30 | {"id": "D3", "text": "BM25 ranks documents using keyword statistics."},
+\phase_2_advanced_rag_optimization\rag\13_contextual_retrieval.py | Line 32 | query = "How does retrieval find relevant documents?"
+\phase_2_advanced_rag_optimization\rag\13_contextual_retrieval.py | Line 35 | for doc in documents:
+\phase_2_advanced_rag_optimization\rag\14_parent_child_chunking.py | Line 27 | documents = [
+\phase_2_advanced_rag_optimization\rag\14_parent_child_chunking.py | Line 28 | {"id": "D1", "text": "RAG retrieves relevant documents before answering."},
+\phase_2_advanced_rag_optimization\rag\14_parent_child_chunking.py | Line 30 | {"id": "D3", "text": "BM25 ranks documents using keyword statistics."},
+\phase_2_advanced_rag_optimization\rag\14_parent_child_chunking.py | Line 32 | query = "How does retrieval find relevant documents?"
+\phase_2_advanced_rag_optimization\rag\14_parent_child_chunking.py | Line 35 | for doc in documents:
+\phase_2_advanced_rag_optimization\rag\15_document_parsing.py | Line 2 | LESSON 15: Document Parsing
+\phase_2_advanced_rag_optimization\rag\15_document_parsing.py | Line 8 | Understand what Document Parsing means, where it fits in an AI Engineer system,
+\phase_2_advanced_rag_optimization\rag\15_document_parsing.py | Line 25 | concept = "Document Parsing"
+\phase_2_advanced_rag_optimization\rag\16_citations.py | Line 27 | documents = [
+\phase_2_advanced_rag_optimization\rag\16_citations.py | Line 28 | {"id": "D1", "text": "RAG retrieves relevant documents before answering."},
+\phase_2_advanced_rag_optimization\rag\16_citations.py | Line 30 | {"id": "D3", "text": "BM25 ranks documents using keyword statistics."},
+\phase_2_advanced_rag_optimization\rag\16_citations.py | Line 32 | query = "How does retrieval find relevant documents?"
+\phase_2_advanced_rag_optimization\rag\16_citations.py | Line 35 | for doc in documents:
+\phase_2_advanced_rag_optimization\rag\18_agentic_rag.py | Line 2 | LESSON 18: Agentic RAG
+\phase_2_advanced_rag_optimization\rag\18_agentic_rag.py | Line 8 | Understand what Agentic RAG means, where it fits in an AI Engineer system,
+\phase_2_advanced_rag_optimization\rag\18_agentic_rag.py | Line 25 | concept = "Agentic RAG"
+\phase_2_advanced_rag_optimization\rag\19_recall_k.py | Line 27 | documents = [
+\phase_2_advanced_rag_optimization\rag\19_recall_k.py | Line 28 | {"id": "D1", "text": "RAG retrieves relevant documents before answering."},
+\phase_2_advanced_rag_optimization\rag\19_recall_k.py | Line 30 | {"id": "D3", "text": "BM25 ranks documents using keyword statistics."},
+\phase_2_advanced_rag_optimization\rag\19_recall_k.py | Line 32 | query = "How does retrieval find relevant documents?"
+\phase_2_advanced_rag_optimization\rag\19_recall_k.py | Line 35 | for doc in documents:
+\phase_2_advanced_rag_optimization\rag\20_mrr_and_ndcg.py | Line 27 | documents = [
+\phase_2_advanced_rag_optimization\rag\20_mrr_and_ndcg.py | Line 28 | {"id": "D1", "text": "RAG retrieves relevant documents before answering."},
+\phase_2_advanced_rag_optimization\rag\20_mrr_and_ndcg.py | Line 30 | {"id": "D3", "text": "BM25 ranks documents using keyword statistics."},
+\phase_2_advanced_rag_optimization\rag\20_mrr_and_ndcg.py | Line 32 | query = "How does retrieval find relevant documents?"
+\phase_2_advanced_rag_optimization\rag\20_mrr_and_ndcg.py | Line 35 | for doc in documents:
+\phase_2_advanced_rag_optimization\rag\README.md | Line 14 | | 02 | [Cosine Similarity](02_cosine_similarity.py) | COMPLETED |
+\phase_2_advanced_rag_optimization\rag\README.md | Line 21 | | 09 | [Hybrid Search](09_hybrid_search.py) | COMPLETED |
+\phase_2_advanced_rag_optimization\rag\README.md | Line 27 | | 15 | [Document Parsing](15_document_parsing.py) | COMPLETED |
+\phase_2_advanced_rag_optimization\rag\README.md | Line 30 | | 18 | [Agentic RAG](18_agentic_rag.py) | NOT STARTED |
+\phase_3_ai_agents_agentic_rag\README.md | Line 1 | # Phase 3 — AI Agents & Agentic RAG
+\phase_3_ai_agents_agentic_rag\README.md | Line 3 | Build systems that use tools, maintain state, plan, and retrieve when needed.
+\phase_3_ai_agents_agentic_rag\ai_agents\01_tool_calling.py | Line 2 | LESSON 01: Tool Calling
+\phase_3_ai_agents_agentic_rag\ai_agents\01_tool_calling.py | Line 3 | Area: AI Agents
+\phase_3_ai_agents_agentic_rag\ai_agents\01_tool_calling.py | Line 8 | Understand what Tool Calling means, where it fits in an AI Engineer system,
+\phase_3_ai_agents_agentic_rag\ai_agents\01_tool_calling.py | Line 24 | def tool_calling_demo():
+\phase_3_ai_agents_agentic_rag\ai_agents\01_tool_calling.py | Line 25 | # An agent combines a model's decision with a controlled action.
+\phase_3_ai_agents_agentic_rag\ai_agents\01_tool_calling.py | Line 28 | available_tool = "add_numbers"
+\phase_3_ai_agents_agentic_rag\ai_agents\01_tool_calling.py | Line 30 | print("Available tool:", available_tool)
+\phase_3_ai_agents_agentic_rag\ai_agents\01_tool_calling.py | Line 31 | print("Agent decision: call the addition tool")
+\phase_3_ai_agents_agentic_rag\ai_agents\01_tool_calling.py | Line 33 | print("Tool result:", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\01_tool_calling.py | Line 34 | print("Agent response: The total is", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\01_tool_calling.py | Line 35 | print("Now study the specific concept: Tool Calling.")
+\phase_3_ai_agents_agentic_rag\ai_agents\01_tool_calling.py | Line 38 | tool_calling_demo()
+\phase_3_ai_agents_agentic_rag\ai_agents\02_the_agent_loop.py | Line 2 | LESSON 02: The Agent Loop
+\phase_3_ai_agents_agentic_rag\ai_agents\02_the_agent_loop.py | Line 3 | Area: AI Agents
+\phase_3_ai_agents_agentic_rag\ai_agents\02_the_agent_loop.py | Line 8 | Understand what The Agent Loop means, where it fits in an AI Engineer system,
+\phase_3_ai_agents_agentic_rag\ai_agents\02_the_agent_loop.py | Line 24 | def the_agent_loop_demo():
+\phase_3_ai_agents_agentic_rag\ai_agents\02_the_agent_loop.py | Line 25 | # An agent combines a model's decision with a controlled action.
+\phase_3_ai_agents_agentic_rag\ai_agents\02_the_agent_loop.py | Line 28 | available_tool = "add_numbers"
+\phase_3_ai_agents_agentic_rag\ai_agents\02_the_agent_loop.py | Line 30 | print("Available tool:", available_tool)
+\phase_3_ai_agents_agentic_rag\ai_agents\02_the_agent_loop.py | Line 31 | print("Agent decision: call the addition tool")
+\phase_3_ai_agents_agentic_rag\ai_agents\02_the_agent_loop.py | Line 33 | print("Tool result:", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\02_the_agent_loop.py | Line 34 | print("Agent response: The total is", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\02_the_agent_loop.py | Line 35 | print("Now study the specific concept: The Agent Loop.")
+\phase_3_ai_agents_agentic_rag\ai_agents\02_the_agent_loop.py | Line 38 | the_agent_loop_demo()
+\phase_3_ai_agents_agentic_rag\ai_agents\03_react_pattern.py | Line 3 | Area: AI Agents
+\phase_3_ai_agents_agentic_rag\ai_agents\03_react_pattern.py | Line 25 | # An agent combines a model's decision with a controlled action.
+\phase_3_ai_agents_agentic_rag\ai_agents\03_react_pattern.py | Line 28 | available_tool = "add_numbers"
+\phase_3_ai_agents_agentic_rag\ai_agents\03_react_pattern.py | Line 30 | print("Available tool:", available_tool)
+\phase_3_ai_agents_agentic_rag\ai_agents\03_react_pattern.py | Line 31 | print("Agent decision: call the addition tool")
+\phase_3_ai_agents_agentic_rag\ai_agents\03_react_pattern.py | Line 33 | print("Tool result:", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\03_react_pattern.py | Line 34 | print("Agent response: The total is", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\04_planning.py | Line 3 | Area: AI Agents
+\phase_3_ai_agents_agentic_rag\ai_agents\04_planning.py | Line 25 | # An agent combines a model's decision with a controlled action.
+\phase_3_ai_agents_agentic_rag\ai_agents\04_planning.py | Line 28 | available_tool = "add_numbers"
+\phase_3_ai_agents_agentic_rag\ai_agents\04_planning.py | Line 30 | print("Available tool:", available_tool)
+\phase_3_ai_agents_agentic_rag\ai_agents\04_planning.py | Line 31 | print("Agent decision: call the addition tool")
+\phase_3_ai_agents_agentic_rag\ai_agents\04_planning.py | Line 33 | print("Tool result:", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\04_planning.py | Line 34 | print("Agent response: The total is", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\05_reflection.py | Line 3 | Area: AI Agents
+\phase_3_ai_agents_agentic_rag\ai_agents\05_reflection.py | Line 25 | # An agent combines a model's decision with a controlled action.
+\phase_3_ai_agents_agentic_rag\ai_agents\05_reflection.py | Line 28 | available_tool = "add_numbers"
+\phase_3_ai_agents_agentic_rag\ai_agents\05_reflection.py | Line 30 | print("Available tool:", available_tool)
+\phase_3_ai_agents_agentic_rag\ai_agents\05_reflection.py | Line 31 | print("Agent decision: call the addition tool")
+\phase_3_ai_agents_agentic_rag\ai_agents\05_reflection.py | Line 33 | print("Tool result:", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\05_reflection.py | Line 34 | print("Agent response: The total is", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\06_short_term_memory.py | Line 2 | LESSON 06: Short-term Memory
+\phase_3_ai_agents_agentic_rag\ai_agents\06_short_term_memory.py | Line 3 | Area: AI Agents
+\phase_3_ai_agents_agentic_rag\ai_agents\06_short_term_memory.py | Line 8 | Understand what Short-term Memory means, where it fits in an AI Engineer system,
+\phase_3_ai_agents_agentic_rag\ai_agents\06_short_term_memory.py | Line 24 | def short_term_memory_demo():
+\phase_3_ai_agents_agentic_rag\ai_agents\06_short_term_memory.py | Line 25 | # An agent combines a model's decision with a controlled action.
+\phase_3_ai_agents_agentic_rag\ai_agents\06_short_term_memory.py | Line 28 | available_tool = "add_numbers"
+\phase_3_ai_agents_agentic_rag\ai_agents\06_short_term_memory.py | Line 30 | print("Available tool:", available_tool)
+\phase_3_ai_agents_agentic_rag\ai_agents\06_short_term_memory.py | Line 31 | print("Agent decision: call the addition tool")
+\phase_3_ai_agents_agentic_rag\ai_agents\06_short_term_memory.py | Line 33 | print("Tool result:", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\06_short_term_memory.py | Line 34 | print("Agent response: The total is", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\06_short_term_memory.py | Line 35 | print("Now study the specific concept: Short-term Memory.")
+\phase_3_ai_agents_agentic_rag\ai_agents\06_short_term_memory.py | Line 38 | short_term_memory_demo()
+\phase_3_ai_agents_agentic_rag\ai_agents\07_long_term_memory.py | Line 2 | LESSON 07: Long-term Memory
+\phase_3_ai_agents_agentic_rag\ai_agents\07_long_term_memory.py | Line 3 | Area: AI Agents
+\phase_3_ai_agents_agentic_rag\ai_agents\07_long_term_memory.py | Line 8 | Understand what Long-term Memory means, where it fits in an AI Engineer system,
+\phase_3_ai_agents_agentic_rag\ai_agents\07_long_term_memory.py | Line 24 | def long_term_memory_demo():
+\phase_3_ai_agents_agentic_rag\ai_agents\07_long_term_memory.py | Line 25 | # An agent combines a model's decision with a controlled action.
+\phase_3_ai_agents_agentic_rag\ai_agents\07_long_term_memory.py | Line 28 | available_tool = "add_numbers"
+\phase_3_ai_agents_agentic_rag\ai_agents\07_long_term_memory.py | Line 30 | print("Available tool:", available_tool)
+\phase_3_ai_agents_agentic_rag\ai_agents\07_long_term_memory.py | Line 31 | print("Agent decision: call the addition tool")
+\phase_3_ai_agents_agentic_rag\ai_agents\07_long_term_memory.py | Line 33 | print("Tool result:", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\07_long_term_memory.py | Line 34 | print("Agent response: The total is", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\07_long_term_memory.py | Line 35 | print("Now study the specific concept: Long-term Memory.")
+\phase_3_ai_agents_agentic_rag\ai_agents\07_long_term_memory.py | Line 38 | long_term_memory_demo()
+\phase_3_ai_agents_agentic_rag\ai_agents\08_mcp_servers.py | Line 2 | LESSON 08: MCP Servers
+\phase_3_ai_agents_agentic_rag\ai_agents\08_mcp_servers.py | Line 3 | Area: AI Agents
+\phase_3_ai_agents_agentic_rag\ai_agents\08_mcp_servers.py | Line 8 | Understand what MCP Servers means, where it fits in an AI Engineer system,
+\phase_3_ai_agents_agentic_rag\ai_agents\08_mcp_servers.py | Line 24 | def mcp_servers_demo():
+\phase_3_ai_agents_agentic_rag\ai_agents\08_mcp_servers.py | Line 25 | # An agent combines a model's decision with a controlled action.
+\phase_3_ai_agents_agentic_rag\ai_agents\08_mcp_servers.py | Line 28 | available_tool = "add_numbers"
+\phase_3_ai_agents_agentic_rag\ai_agents\08_mcp_servers.py | Line 30 | print("Available tool:", available_tool)
+\phase_3_ai_agents_agentic_rag\ai_agents\08_mcp_servers.py | Line 31 | print("Agent decision: call the addition tool")
+\phase_3_ai_agents_agentic_rag\ai_agents\08_mcp_servers.py | Line 33 | print("Tool result:", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\08_mcp_servers.py | Line 34 | print("Agent response: The total is", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\08_mcp_servers.py | Line 35 | print("Now study the specific concept: MCP Servers.")
+\phase_3_ai_agents_agentic_rag\ai_agents\08_mcp_servers.py | Line 38 | mcp_servers_demo()
+\phase_3_ai_agents_agentic_rag\ai_agents\09_mcp_clients.py | Line 2 | LESSON 09: MCP Clients
+\phase_3_ai_agents_agentic_rag\ai_agents\09_mcp_clients.py | Line 3 | Area: AI Agents
+\phase_3_ai_agents_agentic_rag\ai_agents\09_mcp_clients.py | Line 8 | Understand what MCP Clients means, where it fits in an AI Engineer system,
+\phase_3_ai_agents_agentic_rag\ai_agents\09_mcp_clients.py | Line 24 | def mcp_clients_demo():
+\phase_3_ai_agents_agentic_rag\ai_agents\09_mcp_clients.py | Line 25 | # An agent combines a model's decision with a controlled action.
+\phase_3_ai_agents_agentic_rag\ai_agents\09_mcp_clients.py | Line 28 | available_tool = "add_numbers"
+\phase_3_ai_agents_agentic_rag\ai_agents\09_mcp_clients.py | Line 30 | print("Available tool:", available_tool)
+\phase_3_ai_agents_agentic_rag\ai_agents\09_mcp_clients.py | Line 31 | print("Agent decision: call the addition tool")
+\phase_3_ai_agents_agentic_rag\ai_agents\09_mcp_clients.py | Line 33 | print("Tool result:", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\09_mcp_clients.py | Line 34 | print("Agent response: The total is", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\09_mcp_clients.py | Line 35 | print("Now study the specific concept: MCP Clients.")
+\phase_3_ai_agents_agentic_rag\ai_agents\09_mcp_clients.py | Line 38 | mcp_clients_demo()
+\phase_3_ai_agents_agentic_rag\ai_agents\10_agent_skills.py | Line 2 | LESSON 10: Agent Skills
+\phase_3_ai_agents_agentic_rag\ai_agents\10_agent_skills.py | Line 3 | Area: AI Agents
+\phase_3_ai_agents_agentic_rag\ai_agents\10_agent_skills.py | Line 8 | Understand what Agent Skills means, where it fits in an AI Engineer system,
+\phase_3_ai_agents_agentic_rag\ai_agents\10_agent_skills.py | Line 24 | def agent_skills_demo():
+\phase_3_ai_agents_agentic_rag\ai_agents\10_agent_skills.py | Line 25 | # An agent combines a model's decision with a controlled action.
+\phase_3_ai_agents_agentic_rag\ai_agents\10_agent_skills.py | Line 28 | available_tool = "add_numbers"
+\phase_3_ai_agents_agentic_rag\ai_agents\10_agent_skills.py | Line 30 | print("Available tool:", available_tool)
+\phase_3_ai_agents_agentic_rag\ai_agents\10_agent_skills.py | Line 31 | print("Agent decision: call the addition tool")
+\phase_3_ai_agents_agentic_rag\ai_agents\10_agent_skills.py | Line 33 | print("Tool result:", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\10_agent_skills.py | Line 34 | print("Agent response: The total is", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\10_agent_skills.py | Line 35 | print("Now study the specific concept: Agent Skills.")
+\phase_3_ai_agents_agentic_rag\ai_agents\10_agent_skills.py | Line 38 | agent_skills_demo()
+\phase_3_ai_agents_agentic_rag\ai_agents\11_multi_agent_handoffs.py | Line 2 | LESSON 11: Multi-agent Handoffs
+\phase_3_ai_agents_agentic_rag\ai_agents\11_multi_agent_handoffs.py | Line 3 | Area: AI Agents
+\phase_3_ai_agents_agentic_rag\ai_agents\11_multi_agent_handoffs.py | Line 8 | Understand what Multi-agent Handoffs means, where it fits in an AI Engineer system,
+\phase_3_ai_agents_agentic_rag\ai_agents\11_multi_agent_handoffs.py | Line 24 | def multi_agent_handoffs_demo():
+\phase_3_ai_agents_agentic_rag\ai_agents\11_multi_agent_handoffs.py | Line 25 | # An agent combines a model's decision with a controlled action.
+\phase_3_ai_agents_agentic_rag\ai_agents\11_multi_agent_handoffs.py | Line 28 | available_tool = "add_numbers"
+\phase_3_ai_agents_agentic_rag\ai_agents\11_multi_agent_handoffs.py | Line 30 | print("Available tool:", available_tool)
+\phase_3_ai_agents_agentic_rag\ai_agents\11_multi_agent_handoffs.py | Line 31 | print("Agent decision: call the addition tool")
+\phase_3_ai_agents_agentic_rag\ai_agents\11_multi_agent_handoffs.py | Line 33 | print("Tool result:", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\11_multi_agent_handoffs.py | Line 34 | print("Agent response: The total is", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\11_multi_agent_handoffs.py | Line 35 | print("Now study the specific concept: Multi-agent Handoffs.")
+\phase_3_ai_agents_agentic_rag\ai_agents\11_multi_agent_handoffs.py | Line 38 | multi_agent_handoffs_demo()
+\phase_3_ai_agents_agentic_rag\ai_agents\12_orchestrator_worker_pattern.py | Line 3 | Area: AI Agents
+\phase_3_ai_agents_agentic_rag\ai_agents\12_orchestrator_worker_pattern.py | Line 25 | # An agent combines a model's decision with a controlled action.
+\phase_3_ai_agents_agentic_rag\ai_agents\12_orchestrator_worker_pattern.py | Line 28 | available_tool = "add_numbers"
+\phase_3_ai_agents_agentic_rag\ai_agents\12_orchestrator_worker_pattern.py | Line 30 | print("Available tool:", available_tool)
+\phase_3_ai_agents_agentic_rag\ai_agents\12_orchestrator_worker_pattern.py | Line 31 | print("Agent decision: call the addition tool")
+\phase_3_ai_agents_agentic_rag\ai_agents\12_orchestrator_worker_pattern.py | Line 33 | print("Tool result:", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\12_orchestrator_worker_pattern.py | Line 34 | print("Agent response: The total is", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\13_langgraph.py | Line 2 | LESSON 13: LangGraph
+\phase_3_ai_agents_agentic_rag\ai_agents\13_langgraph.py | Line 3 | Area: AI Agents
+\phase_3_ai_agents_agentic_rag\ai_agents\13_langgraph.py | Line 8 | Understand what LangGraph means, where it fits in an AI Engineer system,
+\phase_3_ai_agents_agentic_rag\ai_agents\13_langgraph.py | Line 24 | def langgraph_demo():
+\phase_3_ai_agents_agentic_rag\ai_agents\13_langgraph.py | Line 25 | # An agent combines a model's decision with a controlled action.
+\phase_3_ai_agents_agentic_rag\ai_agents\13_langgraph.py | Line 28 | available_tool = "add_numbers"
+\phase_3_ai_agents_agentic_rag\ai_agents\13_langgraph.py | Line 30 | print("Available tool:", available_tool)
+\phase_3_ai_agents_agentic_rag\ai_agents\13_langgraph.py | Line 31 | print("Agent decision: call the addition tool")
+\phase_3_ai_agents_agentic_rag\ai_agents\13_langgraph.py | Line 33 | print("Tool result:", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\13_langgraph.py | Line 34 | print("Agent response: The total is", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\13_langgraph.py | Line 35 | print("Now study the specific concept: LangGraph.")
+\phase_3_ai_agents_agentic_rag\ai_agents\13_langgraph.py | Line 38 | langgraph_demo()
+\phase_3_ai_agents_agentic_rag\ai_agents\14_openai_agents_sdk.py | Line 2 | LESSON 14: OpenAI Agents SDK
+\phase_3_ai_agents_agentic_rag\ai_agents\14_openai_agents_sdk.py | Line 3 | Area: AI Agents
+\phase_3_ai_agents_agentic_rag\ai_agents\14_openai_agents_sdk.py | Line 8 | Understand what OpenAI Agents SDK means, where it fits in an AI Engineer system,
+\phase_3_ai_agents_agentic_rag\ai_agents\14_openai_agents_sdk.py | Line 24 | def openai_agents_sdk_demo():
+\phase_3_ai_agents_agentic_rag\ai_agents\14_openai_agents_sdk.py | Line 25 | # An agent combines a model's decision with a controlled action.
+\phase_3_ai_agents_agentic_rag\ai_agents\14_openai_agents_sdk.py | Line 28 | available_tool = "add_numbers"
+\phase_3_ai_agents_agentic_rag\ai_agents\14_openai_agents_sdk.py | Line 30 | print("Available tool:", available_tool)
+\phase_3_ai_agents_agentic_rag\ai_agents\14_openai_agents_sdk.py | Line 31 | print("Agent decision: call the addition tool")
+\phase_3_ai_agents_agentic_rag\ai_agents\14_openai_agents_sdk.py | Line 33 | print("Tool result:", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\14_openai_agents_sdk.py | Line 34 | print("Agent response: The total is", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\14_openai_agents_sdk.py | Line 35 | print("Now study the specific concept: OpenAI Agents SDK.")
+\phase_3_ai_agents_agentic_rag\ai_agents\14_openai_agents_sdk.py | Line 38 | openai_agents_sdk_demo()
+\phase_3_ai_agents_agentic_rag\ai_agents\15_state_and_checkpoints.py | Line 3 | Area: AI Agents
+\phase_3_ai_agents_agentic_rag\ai_agents\15_state_and_checkpoints.py | Line 25 | # An agent combines a model's decision with a controlled action.
+\phase_3_ai_agents_agentic_rag\ai_agents\15_state_and_checkpoints.py | Line 28 | available_tool = "add_numbers"
+\phase_3_ai_agents_agentic_rag\ai_agents\15_state_and_checkpoints.py | Line 30 | print("Available tool:", available_tool)
+\phase_3_ai_agents_agentic_rag\ai_agents\15_state_and_checkpoints.py | Line 31 | print("Agent decision: call the addition tool")
+\phase_3_ai_agents_agentic_rag\ai_agents\15_state_and_checkpoints.py | Line 33 | print("Tool result:", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\15_state_and_checkpoints.py | Line 34 | print("Agent response: The total is", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\16_human_in_the_loop.py | Line 3 | Area: AI Agents
+\phase_3_ai_agents_agentic_rag\ai_agents\16_human_in_the_loop.py | Line 25 | # An agent combines a model's decision with a controlled action.
+\phase_3_ai_agents_agentic_rag\ai_agents\16_human_in_the_loop.py | Line 28 | available_tool = "add_numbers"
+\phase_3_ai_agents_agentic_rag\ai_agents\16_human_in_the_loop.py | Line 30 | print("Available tool:", available_tool)
+\phase_3_ai_agents_agentic_rag\ai_agents\16_human_in_the_loop.py | Line 31 | print("Agent decision: call the addition tool")
+\phase_3_ai_agents_agentic_rag\ai_agents\16_human_in_the_loop.py | Line 33 | print("Tool result:", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\16_human_in_the_loop.py | Line 34 | print("Agent response: The total is", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\17_context_engineering.py | Line 3 | Area: AI Agents
+\phase_3_ai_agents_agentic_rag\ai_agents\17_context_engineering.py | Line 25 | # An agent combines a model's decision with a controlled action.
+\phase_3_ai_agents_agentic_rag\ai_agents\17_context_engineering.py | Line 28 | available_tool = "add_numbers"
+\phase_3_ai_agents_agentic_rag\ai_agents\17_context_engineering.py | Line 30 | print("Available tool:", available_tool)
+\phase_3_ai_agents_agentic_rag\ai_agents\17_context_engineering.py | Line 31 | print("Agent decision: call the addition tool")
+\phase_3_ai_agents_agentic_rag\ai_agents\17_context_engineering.py | Line 33 | print("Tool result:", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\17_context_engineering.py | Line 34 | print("Agent response: The total is", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\18_context_compaction.py | Line 3 | Area: AI Agents
+\phase_3_ai_agents_agentic_rag\ai_agents\18_context_compaction.py | Line 25 | # An agent combines a model's decision with a controlled action.
+\phase_3_ai_agents_agentic_rag\ai_agents\18_context_compaction.py | Line 28 | available_tool = "add_numbers"
+\phase_3_ai_agents_agentic_rag\ai_agents\18_context_compaction.py | Line 30 | print("Available tool:", available_tool)
+\phase_3_ai_agents_agentic_rag\ai_agents\18_context_compaction.py | Line 31 | print("Agent decision: call the addition tool")
+\phase_3_ai_agents_agentic_rag\ai_agents\18_context_compaction.py | Line 33 | print("Tool result:", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\18_context_compaction.py | Line 34 | print("Agent response: The total is", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\19_stop_conditions.py | Line 3 | Area: AI Agents
+\phase_3_ai_agents_agentic_rag\ai_agents\19_stop_conditions.py | Line 25 | # An agent combines a model's decision with a controlled action.
+\phase_3_ai_agents_agentic_rag\ai_agents\19_stop_conditions.py | Line 28 | available_tool = "add_numbers"
+\phase_3_ai_agents_agentic_rag\ai_agents\19_stop_conditions.py | Line 30 | print("Available tool:", available_tool)
+\phase_3_ai_agents_agentic_rag\ai_agents\19_stop_conditions.py | Line 31 | print("Agent decision: call the addition tool")
+\phase_3_ai_agents_agentic_rag\ai_agents\19_stop_conditions.py | Line 33 | print("Tool result:", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\19_stop_conditions.py | Line 34 | print("Agent response: The total is", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\20_a2a_protocol.py | Line 3 | Area: AI Agents
+\phase_3_ai_agents_agentic_rag\ai_agents\20_a2a_protocol.py | Line 25 | # An agent combines a model's decision with a controlled action.
+\phase_3_ai_agents_agentic_rag\ai_agents\20_a2a_protocol.py | Line 28 | available_tool = "add_numbers"
+\phase_3_ai_agents_agentic_rag\ai_agents\20_a2a_protocol.py | Line 30 | print("Available tool:", available_tool)
+\phase_3_ai_agents_agentic_rag\ai_agents\20_a2a_protocol.py | Line 31 | print("Agent decision: call the addition tool")
+\phase_3_ai_agents_agentic_rag\ai_agents\20_a2a_protocol.py | Line 33 | print("Tool result:", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\20_a2a_protocol.py | Line 34 | print("Agent response: The total is", result)
+\phase_3_ai_agents_agentic_rag\ai_agents\README.md | Line 1 | # AI Agents — AI Agents & Agentic RAG
+\phase_3_ai_agents_agentic_rag\ai_agents\README.md | Line 13 | | 01 | [Tool Calling](01_tool_calling.py) | PARTIAL |
+\phase_3_ai_agents_agentic_rag\ai_agents\README.md | Line 14 | | 02 | [The Agent Loop](02_the_agent_loop.py) | NOT STARTED |
+\phase_3_ai_agents_agentic_rag\ai_agents\README.md | Line 18 | | 06 | [Short-term Memory](06_short_term_memory.py) | NOT STARTED |
+\phase_3_ai_agents_agentic_rag\ai_agents\README.md | Line 19 | | 07 | [Long-term Memory](07_long_term_memory.py) | NOT STARTED |
+\phase_3_ai_agents_agentic_rag\ai_agents\README.md | Line 20 | | 08 | [MCP Servers](08_mcp_servers.py) | PARTIAL |
+\phase_3_ai_agents_agentic_rag\ai_agents\README.md | Line 21 | | 09 | [MCP Clients](09_mcp_clients.py) | PARTIAL |
+\phase_3_ai_agents_agentic_rag\ai_agents\README.md | Line 22 | | 10 | [Agent Skills](10_agent_skills.py) | NOT STARTED |
+\phase_3_ai_agents_agentic_rag\ai_agents\README.md | Line 23 | | 11 | [Multi-agent Handoffs](11_multi_agent_handoffs.py) | NOT STARTED |
+\phase_3_ai_agents_agentic_rag\ai_agents\README.md | Line 25 | | 13 | [LangGraph](13_langgraph.py) | NOT STARTED |
+\phase_3_ai_agents_agentic_rag\ai_agents\README.md | Line 26 | | 14 | [OpenAI Agents SDK](14_openai_agents_sdk.py) | NOT STARTED |
+\phase_4_evaluation_production\ai_security\05_input_guardrails.py | Line 2 | LESSON 05: Input Guardrails
+\phase_4_evaluation_production\ai_security\05_input_guardrails.py | Line 8 | Understand what Input Guardrails means, where it fits in an AI Engineer system,
+\phase_4_evaluation_production\ai_security\05_input_guardrails.py | Line 29 | print("Security topic:", "Input Guardrails")
+\phase_4_evaluation_production\ai_security\09_least_privilege_tools.py | Line 2 | LESSON 09: Least-privilege Tools
+\phase_4_evaluation_production\ai_security\09_least_privilege_tools.py | Line 8 | Understand what Least-privilege Tools means, where it fits in an AI Engineer system,
+\phase_4_evaluation_production\ai_security\09_least_privilege_tools.py | Line 29 | print("Security topic:", "Least-privilege Tools")
+\phase_4_evaluation_production\ai_security\10_tool_sandboxing.py | Line 2 | LESSON 10: Tool Sandboxing
+\phase_4_evaluation_production\ai_security\10_tool_sandboxing.py | Line 8 | Understand what Tool Sandboxing means, where it fits in an AI Engineer system,
+\phase_4_evaluation_production\ai_security\10_tool_sandboxing.py | Line 29 | print("Security topic:", "Tool Sandboxing")
+\phase_4_evaluation_production\ai_security\13_authorization_for_agents.py | Line 2 | LESSON 13: Authorization for Agents
+\phase_4_evaluation_production\ai_security\13_authorization_for_agents.py | Line 8 | Understand what Authorization for Agents means, where it fits in an AI Engineer system,
+\phase_4_evaluation_production\ai_security\13_authorization_for_agents.py | Line 29 | print("Security topic:", "Authorization for Agents")
+\phase_4_evaluation_production\ai_security\18_mcp_server_trust.py | Line 2 | LESSON 18: MCP Server Trust
+\phase_4_evaluation_production\ai_security\18_mcp_server_trust.py | Line 8 | Understand what MCP Server Trust means, where it fits in an AI Engineer system,
+\phase_4_evaluation_production\ai_security\18_mcp_server_trust.py | Line 29 | print("Security topic:", "MCP Server Trust")
+\phase_4_evaluation_production\ai_security\README.md | Line 17 | | 05 | [Input Guardrails](05_input_guardrails.py) | NOT STARTED |
+\phase_4_evaluation_production\ai_security\README.md | Line 21 | | 09 | [Least-privilege Tools](09_least_privilege_tools.py) | NOT STARTED |
+\phase_4_evaluation_production\ai_security\README.md | Line 22 | | 10 | [Tool Sandboxing](10_tool_sandboxing.py) | NOT STARTED |
+\phase_4_evaluation_production\ai_security\README.md | Line 25 | | 13 | [Authorization for Agents](13_authorization_for_agents.py) | NOT STARTED |
+\phase_4_evaluation_production\ai_security\README.md | Line 30 | | 18 | [MCP Server Trust](18_mcp_server_trust.py) | NOT STARTED |
+\phase_4_evaluation_production\backend\01_rest_apis.py | Line 24 | from pydantic import BaseModel, Field
+\phase_4_evaluation_production\backend\01_rest_apis.py | Line 26 | class QuestionRequest(BaseModel):
+\phase_4_evaluation_production\backend\01_rest_apis.py | Line 27 | # Pydantic validates incoming data types and constraints.
+\phase_4_evaluation_production\backend\02_http_and_status_codes.py | Line 24 | from pydantic import BaseModel, Field
+\phase_4_evaluation_production\backend\02_http_and_status_codes.py | Line 26 | class QuestionRequest(BaseModel):
+\phase_4_evaluation_production\backend\02_http_and_status_codes.py | Line 27 | # Pydantic validates incoming data types and constraints.
+\phase_4_evaluation_production\backend\03_async_and_await.py | Line 24 | from pydantic import BaseModel, Field
+\phase_4_evaluation_production\backend\03_async_and_await.py | Line 26 | class QuestionRequest(BaseModel):
+\phase_4_evaluation_production\backend\03_async_and_await.py | Line 27 | # Pydantic validates incoming data types and constraints.
+\phase_4_evaluation_production\backend\04_streaming_with_sse.py | Line 24 | from pydantic import BaseModel, Field
+\phase_4_evaluation_production\backend\04_streaming_with_sse.py | Line 26 | class QuestionRequest(BaseModel):
+\phase_4_evaluation_production\backend\04_streaming_with_sse.py | Line 27 | # Pydantic validates incoming data types and constraints.
+\phase_4_evaluation_production\backend\05_websockets.py | Line 2 | LESSON 05: WebSockets
+\phase_4_evaluation_production\backend\05_websockets.py | Line 8 | Understand what WebSockets means, where it fits in an AI Engineer system,
+\phase_4_evaluation_production\backend\05_websockets.py | Line 24 | from pydantic import BaseModel, Field
+\phase_4_evaluation_production\backend\05_websockets.py | Line 26 | class QuestionRequest(BaseModel):
+\phase_4_evaluation_production\backend\05_websockets.py | Line 27 | # Pydantic validates incoming data types and constraints.
+\phase_4_evaluation_production\backend\05_websockets.py | Line 32 | print("Backend topic:", "WebSockets")
+\phase_4_evaluation_production\backend\06_authentication_with_jwt.py | Line 2 | LESSON 06: Authentication with JWT
+\phase_4_evaluation_production\backend\06_authentication_with_jwt.py | Line 8 | Understand what Authentication with JWT means, where it fits in an AI Engineer system,
+\phase_4_evaluation_production\backend\06_authentication_with_jwt.py | Line 24 | from pydantic import BaseModel, Field
+\phase_4_evaluation_production\backend\06_authentication_with_jwt.py | Line 26 | class QuestionRequest(BaseModel):
+\phase_4_evaluation_production\backend\06_authentication_with_jwt.py | Line 27 | # Pydantic validates incoming data types and constraints.
+\phase_4_evaluation_production\backend\06_authentication_with_jwt.py | Line 32 | print("Backend topic:", "Authentication with JWT")
+\phase_4_evaluation_production\backend\07_oauth_2_0.py | Line 24 | from pydantic import BaseModel, Field
+\phase_4_evaluation_production\backend\07_oauth_2_0.py | Line 26 | class QuestionRequest(BaseModel):
+\phase_4_evaluation_production\backend\07_oauth_2_0.py | Line 27 | # Pydantic validates incoming data types and constraints.
+\phase_4_evaluation_production\backend\08_sql_vs_nosql.py | Line 24 | from pydantic import BaseModel, Field
+\phase_4_evaluation_production\backend\08_sql_vs_nosql.py | Line 26 | class QuestionRequest(BaseModel):
+\phase_4_evaluation_production\backend\08_sql_vs_nosql.py | Line 27 | # Pydantic validates incoming data types and constraints.
+\phase_4_evaluation_production\backend\09_database_indexing.py | Line 24 | from pydantic import BaseModel, Field
+\phase_4_evaluation_production\backend\09_database_indexing.py | Line 26 | class QuestionRequest(BaseModel):
+\phase_4_evaluation_production\backend\09_database_indexing.py | Line 27 | # Pydantic validates incoming data types and constraints.
+\phase_4_evaluation_production\backend\10_transactions_and_acid.py | Line 24 | from pydantic import BaseModel, Field
+\phase_4_evaluation_production\backend\10_transactions_and_acid.py | Line 26 | class QuestionRequest(BaseModel):
+\phase_4_evaluation_production\backend\10_transactions_and_acid.py | Line 27 | # Pydantic validates incoming data types and constraints.
+\phase_4_evaluation_production\backend\11_caching_with_redis.py | Line 24 | from pydantic import BaseModel, Field
+\phase_4_evaluation_production\backend\11_caching_with_redis.py | Line 26 | class QuestionRequest(BaseModel):
+\phase_4_evaluation_production\backend\11_caching_with_redis.py | Line 27 | # Pydantic validates incoming data types and constraints.
+\phase_4_evaluation_production\backend\12_message_queues.py | Line 24 | from pydantic import BaseModel, Field
+\phase_4_evaluation_production\backend\12_message_queues.py | Line 26 | class QuestionRequest(BaseModel):
+\phase_4_evaluation_production\backend\12_message_queues.py | Line 27 | # Pydantic validates incoming data types and constraints.
+\phase_4_evaluation_production\backend\13_background_jobs.py | Line 24 | from pydantic import BaseModel, Field
+\phase_4_evaluation_production\backend\13_background_jobs.py | Line 26 | class QuestionRequest(BaseModel):
+\phase_4_evaluation_production\backend\13_background_jobs.py | Line 27 | # Pydantic validates incoming data types and constraints.
+\phase_4_evaluation_production\backend\14_rate_limiting.py | Line 24 | from pydantic import BaseModel, Field
+\phase_4_evaluation_production\backend\14_rate_limiting.py | Line 26 | class QuestionRequest(BaseModel):
+\phase_4_evaluation_production\backend\14_rate_limiting.py | Line 27 | # Pydantic validates incoming data types and constraints.
+\phase_4_evaluation_production\backend\15_idempotency_keys.py | Line 24 | from pydantic import BaseModel, Field
+\phase_4_evaluation_production\backend\15_idempotency_keys.py | Line 26 | class QuestionRequest(BaseModel):
+\phase_4_evaluation_production\backend\15_idempotency_keys.py | Line 27 | # Pydantic validates incoming data types and constraints.
+\phase_4_evaluation_production\backend\16_retries_with_backoff.py | Line 24 | from pydantic import BaseModel, Field
+\phase_4_evaluation_production\backend\16_retries_with_backoff.py | Line 26 | class QuestionRequest(BaseModel):
+\phase_4_evaluation_production\backend\16_retries_with_backoff.py | Line 27 | # Pydantic validates incoming data types and constraints.
+\phase_4_evaluation_production\backend\17_file_uploads_to_s3.py | Line 24 | from pydantic import BaseModel, Field
+\phase_4_evaluation_production\backend\17_file_uploads_to_s3.py | Line 26 | class QuestionRequest(BaseModel):
+\phase_4_evaluation_production\backend\17_file_uploads_to_s3.py | Line 27 | # Pydantic validates incoming data types and constraints.
+\phase_4_evaluation_production\backend\18_pagination.py | Line 24 | from pydantic import BaseModel, Field
+\phase_4_evaluation_production\backend\18_pagination.py | Line 26 | class QuestionRequest(BaseModel):
+\phase_4_evaluation_production\backend\18_pagination.py | Line 27 | # Pydantic validates incoming data types and constraints.
+\phase_4_evaluation_production\backend\19_input_validation_with_pydantic.py | Line 2 | LESSON 19: Input Validation with Pydantic
+\phase_4_evaluation_production\backend\19_input_validation_with_pydantic.py | Line 8 | Understand what Input Validation with Pydantic means, where it fits in an AI Engineer system,
+\phase_4_evaluation_production\backend\19_input_validation_with_pydantic.py | Line 24 | from pydantic import BaseModel, Field
+\phase_4_evaluation_production\backend\19_input_validation_with_pydantic.py | Line 26 | class QuestionRequest(BaseModel):
+\phase_4_evaluation_production\backend\19_input_validation_with_pydantic.py | Line 27 | # Pydantic validates incoming data types and constraints.
+\phase_4_evaluation_production\backend\19_input_validation_with_pydantic.py | Line 32 | print("Backend topic:", "Input Validation with Pydantic")
+\phase_4_evaluation_production\backend\20_logging_and_monitoring.py | Line 24 | from pydantic import BaseModel, Field
+\phase_4_evaluation_production\backend\20_logging_and_monitoring.py | Line 26 | class QuestionRequest(BaseModel):
+\phase_4_evaluation_production\backend\20_logging_and_monitoring.py | Line 27 | # Pydantic validates incoming data types and constraints.
+\phase_4_evaluation_production\backend\README.md | Line 17 | | 05 | [WebSockets](05_websockets.py) | PARTIAL |
+\phase_4_evaluation_production\backend\README.md | Line 18 | | 06 | [Authentication with JWT](06_authentication_with_jwt.py) | NOT STARTED |
+\phase_4_evaluation_production\backend\README.md | Line 31 | | 19 | [Input Validation with Pydantic](19_input_validation_with_pydantic.py) | PARTIAL |
+\phase_4_evaluation_production\deployment\01_docker.py | Line 2 | LESSON 01: Docker
+\phase_4_evaluation_production\deployment\01_docker.py | Line 8 | Understand what Docker means, where it fits in an AI Engineer system,
+\phase_4_evaluation_production\deployment\01_docker.py | Line 29 | print("Deployment topic:", "Docker")
+\phase_4_evaluation_production\deployment\02_docker_compose.py | Line 2 | LESSON 02: Docker Compose
+\phase_4_evaluation_production\deployment\02_docker_compose.py | Line 8 | Understand what Docker Compose means, where it fits in an AI Engineer system,
+\phase_4_evaluation_production\deployment\02_docker_compose.py | Line 29 | print("Deployment topic:", "Docker Compose")
+\phase_4_evaluation_production\deployment\README.md | Line 13 | | 01 | [Docker](01_docker.py) | NOT STARTED |
+\phase_4_evaluation_production\deployment\README.md | Line 14 | | 02 | [Docker Compose](02_docker_compose.py) | NOT STARTED |
+\phase_4_evaluation_production\evals\06_faithfulness.py | Line 2 | LESSON 06: Faithfulness
+\phase_4_evaluation_production\evals\06_faithfulness.py | Line 8 | Understand what Faithfulness means, where it fits in an AI Engineer system,
+\phase_4_evaluation_production\evals\06_faithfulness.py | Line 33 | print("Evaluation concept:", "Faithfulness")
+\phase_4_evaluation_production\evals\09_tool_call_accuracy.py | Line 2 | LESSON 09: Tool Call Accuracy
+\phase_4_evaluation_production\evals\09_tool_call_accuracy.py | Line 8 | Understand what Tool Call Accuracy means, where it fits in an AI Engineer system,
+\phase_4_evaluation_production\evals\09_tool_call_accuracy.py | Line 33 | print("Evaluation concept:", "Tool Call Accuracy")
+\phase_4_evaluation_production\evals\README.md | Line 18 | | 06 | [Faithfulness](06_faithfulness.py) | NOT STARTED |
+\phase_4_evaluation_production\evals\README.md | Line 21 | | 09 | [Tool Call Accuracy](09_tool_call_accuracy.py) | NOT STARTED |
+\phase_5_capstone_interview\capstone_agentic_rag\main.py | Line 5 | print("Agentic RAG Capstone starter")
+\phase_5_capstone_interview\capstone_agentic_rag\main.py | Line 6 | print("Next: implement ingestion, retrieval, agent, evaluation and API layers.")
+\phase_5_capstone_interview\capstone_agentic_rag\README.md | Line 1 | # Capstone — Agentic RAG Knowledge Assistant
+\phase_5_capstone_interview\capstone_agentic_rag\README.md | Line 7 | 2. Retrieval: hybrid search, reranking and citations.
+\phase_5_capstone_interview\capstone_agentic_rag\README.md | Line 8 | 3. Agent: choose retrieval/tools under controlled rules.
+\phase_5_capstone_interview\capstone_agentic_rag\README.md | Line 10 | 5. API: FastAPI request/response layer.
+\phase_5_capstone_interview\capstone_agentic_rag\README.md | Line 12 | 7. Operations: logs, tracing, health checks and Docker.
+
+================ ENVIRONMENT FILES ================
+\.env
+\config.py
+\requirements.txt
+
+================ PHASE FILES ================
+\.env
+\.gitignore
+\config.py
+\create_docx.py
+\create_sample_documents.py
+\download_real_html.py
+\phase_2_Advanced_RAG_Engineering_lab.py
+\phase_2_agent_memory.json
+\requirements.txt
+\test_gemini.py
+\tiktoken)
+\01_Data_Ingestion\01_multiple_document_loaders.py
+\01_Data_Ingestion\02_theory_and_interview_notes.md
+\02_RAG_Fundamentals\01_chunking_and_embeddings.py
+\02_RAG_Fundamentals\02_theory_and_interview_notes.md
+\03_Advanced_RAG\01_advanced_retrieval_engineering.py
+\03_Advanced_RAG\02_theory_and_interview_notes.md
+\03_Advanced_RAG\15_hybrid_search_reranking.py
+\04_RAG_Production\01_production_rag_app.py
+\04_RAG_Production\01_production_rag_app_backup.py
+\04_RAG_Production\01_production_rag_app_backup_20261122_185857.py
+\04_RAG_Production\02_theory_and_interview_notes.md
+\04_RAG_Production\test_gemini.py
+\documents\company_information.txt
+\documents\company_report.docx
+\documents\employee_data.csv
+\documents\nasa_climate_evidence.html
+\documents\TechVision_AI_RAG_Learning_Dataset.pdf
+\phase_2_advanced_rag_optimization\README.md
+\phase_2_advanced_rag_optimization\llm\01_tokenization.py
+\phase_2_advanced_rag_optimization\llm\02_transformer_architecture.py
+\phase_2_advanced_rag_optimization\llm\03_self_attention.py
+\phase_2_advanced_rag_optimization\llm\04_context_windows.py
+\phase_2_advanced_rag_optimization\llm\05_kv_cache.py
+\phase_2_advanced_rag_optimization\llm\06_temperature_and_top_p.py
+\phase_2_advanced_rag_optimization\llm\07_system_prompts.py
+\phase_2_advanced_rag_optimization\llm\08_few_shot_prompting.py
+\phase_2_advanced_rag_optimization\llm\09_chain_of_thought.py
+\phase_2_advanced_rag_optimization\llm\10_reasoning_models.py
+\phase_2_advanced_rag_optimization\llm\11_structured_outputs.py
+\phase_2_advanced_rag_optimization\llm\12_prompt_caching.py
+\phase_2_advanced_rag_optimization\llm\13_token_pricing.py
+\phase_2_advanced_rag_optimization\llm\14_hallucinations.py
+\phase_2_advanced_rag_optimization\llm\15_multimodal_inputs.py
+\phase_2_advanced_rag_optimization\llm\16_fine_tuning_with_lora.py
+\phase_2_advanced_rag_optimization\llm\17_qlora.py
+\phase_2_advanced_rag_optimization\llm\18_quantization.py
+\phase_2_advanced_rag_optimization\llm\19_distillation.py
+\phase_2_advanced_rag_optimization\llm\20_open_vs_closed_models.py
+\phase_2_advanced_rag_optimization\llm\README.md
+\phase_2_advanced_rag_optimization\rag\01_embeddings.py
+\phase_2_advanced_rag_optimization\rag\02_cosine_similarity.py
+\phase_2_advanced_rag_optimization\rag\03_chunking_strategies.py
+\phase_2_advanced_rag_optimization\rag\04_vector_databases.py
+\phase_2_advanced_rag_optimization\rag\05_pgvector.py
+\phase_2_advanced_rag_optimization\rag\06_hnsw_indexes.py
+\phase_2_advanced_rag_optimization\rag\07_metadata_filtering.py
+\phase_2_advanced_rag_optimization\rag\08_bm25_keyword_search.py
+\phase_2_advanced_rag_optimization\rag\09_hybrid_search.py
+\phase_2_advanced_rag_optimization\rag\10_reranking.py
+\phase_2_advanced_rag_optimization\rag\11_query_rewriting.py
+\phase_2_advanced_rag_optimization\rag\12_hyde.py
+\phase_2_advanced_rag_optimization\rag\13_contextual_retrieval.py
+\phase_2_advanced_rag_optimization\rag\14_parent_child_chunking.py
+\phase_2_advanced_rag_optimization\rag\15_document_parsing.py
+\phase_2_advanced_rag_optimization\rag\16_citations.py
+\phase_2_advanced_rag_optimization\rag\17_graphrag.py
+\phase_2_advanced_rag_optimization\rag\18_agentic_rag.py
+\phase_2_advanced_rag_optimization\rag\19_recall_k.py
+\phase_2_advanced_rag_optimization\rag\20_mrr_and_ndcg.py
+\phase_2_advanced_rag_optimization\rag\README.md
+\phase_3_ai_agents_agentic_rag\README.md
+\phase_3_ai_agents_agentic_rag\ai_agents\01_tool_calling.py
+\phase_3_ai_agents_agentic_rag\ai_agents\02_the_agent_loop.py
+\phase_3_ai_agents_agentic_rag\ai_agents\03_react_pattern.py
+\phase_3_ai_agents_agentic_rag\ai_agents\04_planning.py
+\phase_3_ai_agents_agentic_rag\ai_agents\05_reflection.py
+\phase_3_ai_agents_agentic_rag\ai_agents\06_short_term_memory.py
+\phase_3_ai_agents_agentic_rag\ai_agents\07_long_term_memory.py
+\phase_3_ai_agents_agentic_rag\ai_agents\08_mcp_servers.py
+\phase_3_ai_agents_agentic_rag\ai_agents\09_mcp_clients.py
+\phase_3_ai_agents_agentic_rag\ai_agents\10_agent_skills.py
+\phase_3_ai_agents_agentic_rag\ai_agents\11_multi_agent_handoffs.py
+\phase_3_ai_agents_agentic_rag\ai_agents\12_orchestrator_worker_pattern.py
+\phase_3_ai_agents_agentic_rag\ai_agents\13_langgraph.py
+\phase_3_ai_agents_agentic_rag\ai_agents\14_openai_agents_sdk.py
+\phase_3_ai_agents_agentic_rag\ai_agents\15_state_and_checkpoints.py
+\phase_3_ai_agents_agentic_rag\ai_agents\16_human_in_the_loop.py
+\phase_3_ai_agents_agentic_rag\ai_agents\17_context_engineering.py
+\phase_3_ai_agents_agentic_rag\ai_agents\18_context_compaction.py
+\phase_3_ai_agents_agentic_rag\ai_agents\19_stop_conditions.py
+\phase_3_ai_agents_agentic_rag\ai_agents\20_a2a_protocol.py
+\phase_3_ai_agents_agentic_rag\ai_agents\README.md
+\phase_4_evaluation_production\README.md
+\phase_4_evaluation_production\ai_security\01_prompt_injection.py
+\phase_4_evaluation_production\ai_security\02_indirect_prompt_injection.py
+\phase_4_evaluation_production\ai_security\03_jailbreaks.py
+\phase_4_evaluation_production\ai_security\04_owasp_top_10_for_llms.py
+\phase_4_evaluation_production\ai_security\05_input_guardrails.py
+\phase_4_evaluation_production\ai_security\06_output_validation.py
+\phase_4_evaluation_production\ai_security\07_pii_redaction.py
+\phase_4_evaluation_production\ai_security\08_data_leakage.py
+\phase_4_evaluation_production\ai_security\09_least_privilege_tools.py
+\phase_4_evaluation_production\ai_security\10_tool_sandboxing.py
+\phase_4_evaluation_production\ai_security\11_secrets_management.py
+\phase_4_evaluation_production\ai_security\12_api_key_rotation.py
+\phase_4_evaluation_production\ai_security\13_authorization_for_agents.py
+\phase_4_evaluation_production\ai_security\14_human_approval_for_actions.py
+\phase_4_evaluation_production\ai_security\15_content_moderation.py
+\phase_4_evaluation_production\ai_security\16_data_poisoning.py
+\phase_4_evaluation_production\ai_security\17_access_control_in_rag.py
+\phase_4_evaluation_production\ai_security\18_mcp_server_trust.py
+\phase_4_evaluation_production\ai_security\19_audit_logging.py
+\phase_4_evaluation_production\ai_security\20_red_teaming.py
+\phase_4_evaluation_production\ai_security\README.md
+\phase_4_evaluation_production\ai_system_design\01_model_routing.py
+\phase_4_evaluation_production\ai_system_design\02_model_fallbacks.py
+\phase_4_evaluation_production\ai_system_design\03_semantic_caching.py
+\phase_4_evaluation_production\ai_system_design\04_prefix_caching.py
+\phase_4_evaluation_production\ai_system_design\05_token_budgets.py
+\phase_4_evaluation_production\ai_system_design\06_streaming_responses.py
+\phase_4_evaluation_production\ai_system_design\07_time_to_first_token.py
+\phase_4_evaluation_production\ai_system_design\08_throughput_vs_latency.py
+\phase_4_evaluation_production\ai_system_design\09_inference_serving_with_vllm.py
+\phase_4_evaluation_production\ai_system_design\10_continuous_batching.py
+\phase_4_evaluation_production\ai_system_design\11_pagedattention.py
+\phase_4_evaluation_production\ai_system_design\12_speculative_decoding.py
+\phase_4_evaluation_production\ai_system_design\13_gpu_vs_api_cost.py
+\phase_4_evaluation_production\ai_system_design\14_batch_inference.py
+\phase_4_evaluation_production\ai_system_design\15_async_job_pipelines.py
+\phase_4_evaluation_production\ai_system_design\16_provider_rate_limits.py
+\phase_4_evaluation_production\ai_system_design\17_multi_tenant_design.py
+\phase_4_evaluation_production\ai_system_design\18_rag_vs_fine_tuning.py
+\phase_4_evaluation_production\ai_system_design\19_context_window_management.py
+\phase_4_evaluation_production\ai_system_design\20_cost_optimization.py
+\phase_4_evaluation_production\ai_system_design\README.md
+\phase_4_evaluation_production\backend\01_rest_apis.py
+\phase_4_evaluation_production\backend\02_http_and_status_codes.py
+\phase_4_evaluation_production\backend\03_async_and_await.py
+\phase_4_evaluation_production\backend\04_streaming_with_sse.py
+\phase_4_evaluation_production\backend\05_websockets.py
+\phase_4_evaluation_production\backend\06_authentication_with_jwt.py
+\phase_4_evaluation_production\backend\07_oauth_2_0.py
+\phase_4_evaluation_production\backend\08_sql_vs_nosql.py
+\phase_4_evaluation_production\backend\09_database_indexing.py
+\phase_4_evaluation_production\backend\10_transactions_and_acid.py
+\phase_4_evaluation_production\backend\11_caching_with_redis.py
+\phase_4_evaluation_production\backend\12_message_queues.py
+\phase_4_evaluation_production\backend\13_background_jobs.py
+\phase_4_evaluation_production\backend\14_rate_limiting.py
+\phase_4_evaluation_production\backend\15_idempotency_keys.py
+\phase_4_evaluation_production\backend\16_retries_with_backoff.py
+\phase_4_evaluation_production\backend\17_file_uploads_to_s3.py
+\phase_4_evaluation_production\backend\18_pagination.py
+\phase_4_evaluation_production\backend\19_input_validation_with_pydantic.py
+\phase_4_evaluation_production\backend\20_logging_and_monitoring.py
+\phase_4_evaluation_production\backend\README.md
+\phase_4_evaluation_production\deployment\01_docker.py
+\phase_4_evaluation_production\deployment\02_docker_compose.py
+\phase_4_evaluation_production\deployment\03_kubernetes_basics.py
+\phase_4_evaluation_production\deployment\04_ci_cd_pipelines.py
+\phase_4_evaluation_production\deployment\05_github_actions.py
+\phase_4_evaluation_production\deployment\06_eval_gates_in_ci.py
+\phase_4_evaluation_production\deployment\07_environment_configs.py
+\phase_4_evaluation_production\deployment\08_infrastructure_as_code.py
+\phase_4_evaluation_production\deployment\09_serverless_functions.py
+\phase_4_evaluation_production\deployment\10_gpu_instances.py
+\phase_4_evaluation_production\deployment\11_ollama_for_local_models.py
+\phase_4_evaluation_production\deployment\12_autoscaling.py
+\phase_4_evaluation_production\deployment\13_load_balancing.py
+\phase_4_evaluation_production\deployment\14_canary_releases.py
+\phase_4_evaluation_production\deployment\15_feature_flags.py
+\phase_4_evaluation_production\deployment\16_prompt_versioning.py
+\phase_4_evaluation_production\deployment\17_model_versioning.py
+\phase_4_evaluation_production\deployment\18_health_checks.py
+\phase_4_evaluation_production\deployment\19_alerts_and_dashboards.py
+\phase_4_evaluation_production\deployment\20_rollbacks.py
+\phase_4_evaluation_production\deployment\README.md
+\phase_4_evaluation_production\evals\01_golden_datasets.py
+\phase_4_evaluation_production\evals\02_error_analysis.py
+\phase_4_evaluation_production\evals\03_llm_as_a_judge.py
+\phase_4_evaluation_production\evals\04_pairwise_comparison.py
+\phase_4_evaluation_production\evals\05_rubric_scoring.py
+\phase_4_evaluation_production\evals\06_faithfulness.py
+\phase_4_evaluation_production\evals\07_answer_relevance.py
+\phase_4_evaluation_production\evals\08_context_precision.py
+\phase_4_evaluation_production\evals\09_tool_call_accuracy.py
+\phase_4_evaluation_production\evals\10_trajectory_evals.py
+\phase_4_evaluation_production\evals\11_regression_evals_in_ci.py
+\phase_4_evaluation_production\evals\12_a_b_testing_prompts.py
+\phase_4_evaluation_production\evals\13_human_labeling.py
+\phase_4_evaluation_production\evals\14_synthetic_test_data.py
+\phase_4_evaluation_production\evals\15_tracing.py
+\phase_4_evaluation_production\evals\16_langfuse.py
+\phase_4_evaluation_production\evals\17_opentelemetry_for_llms.py
+\phase_4_evaluation_production\evals\18_p95_latency.py
+\phase_4_evaluation_production\evals\19_cost_per_request.py
+\phase_4_evaluation_production\evals\20_user_feedback_loops.py
+\phase_4_evaluation_production\evals\README.md
+\phase_5_capstone_interview\README.md
+\phase_5_capstone_interview\capstone_agentic_rag\main.py
+\phase_5_capstone_interview\capstone_agentic_rag\README.md
+\phase_5_capstone_interview\capstone_agentic_rag\test_smoke.py
+
+================ AUDIT COMPLETE ================

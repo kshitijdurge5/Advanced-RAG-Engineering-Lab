@@ -1,0 +1,38 @@
+
+COMPANY NAME: TechVision AI
+
+ABOUT THE COMPANY:
+TechVision AI is a technology company that develops
+Artificial Intelligence and Machine Learning solutions.
+
+DEPARTMENTS:
+
+1. Artificial Intelligence Department
+This department develops Generative AI applications,
+Large Language Models and AI-powered chatbots.
+
+2. Machine Learning Department
+This department develops predictive models,
+classification systems and recommendation engines.
+
+3. Data Science Department
+This department performs data analysis,
+data visualisation and statistical modelling.
+
+4. Human Resources Department
+This department manages employee recruitment,
+training, salaries and performance reviews.
+
+TECHNOLOGIES USED:
+
+Python
+Machine Learning
+Deep Learning
+LangChain
+Gemini API
+Groq API
+ChromaDB
+FastAPI
+
+COMPANY LOCATION:
+Mumbai, India.
